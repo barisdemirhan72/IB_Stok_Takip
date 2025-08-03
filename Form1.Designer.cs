@@ -44,6 +44,8 @@
             this.btnRaporla = new System.Windows.Forms.Button();
             this.arama = new System.Windows.Forms.TextBox();
             this.lblArama = new System.Windows.Forms.Label();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -112,7 +114,7 @@
             this.btnUrunEkle.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUrunEkle.ForeColor = System.Drawing.Color.Black;
             this.btnUrunEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrunEkle.Location = new System.Drawing.Point(926, 182);
+            this.btnUrunEkle.Location = new System.Drawing.Point(926, 188);
             this.btnUrunEkle.Name = "btnUrunEkle";
             this.btnUrunEkle.Size = new System.Drawing.Size(324, 59);
             this.btnUrunEkle.TabIndex = 5;
@@ -148,7 +150,7 @@
             this.btnUrunDuzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnUrunDuzenle.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnUrunDuzenle.ForeColor = System.Drawing.Color.Black;
-            this.btnUrunDuzenle.Location = new System.Drawing.Point(926, 271);
+            this.btnUrunDuzenle.Location = new System.Drawing.Point(926, 278);
             this.btnUrunDuzenle.Name = "btnUrunDuzenle";
             this.btnUrunDuzenle.Size = new System.Drawing.Size(324, 59);
             this.btnUrunDuzenle.TabIndex = 8;
@@ -167,6 +169,7 @@
             this.btnYazdir.TabIndex = 9;
             this.btnYazdir.Text = "[▒] Yazdır";
             this.btnYazdir.UseVisualStyleBackColor = false;
+            this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
             // 
             // btnRaporla
             // 
@@ -198,6 +201,14 @@
             this.lblArama.Size = new System.Drawing.Size(102, 32);
             this.lblArama.TabIndex = 12;
             this.lblArama.Text = "Arama";
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // Form1
             // 
@@ -250,6 +261,8 @@
         private System.Windows.Forms.Button btnRaporla;
         private System.Windows.Forms.TextBox arama;
         private System.Windows.Forms.Label lblArama;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 
