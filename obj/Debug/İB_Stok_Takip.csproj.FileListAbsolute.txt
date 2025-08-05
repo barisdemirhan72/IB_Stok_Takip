@@ -26,3 +26,4 @@ C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\System.Data.SQLite.dll
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\System.Data.SQLite.EF6.dll
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\_B_Stok_.ECBEA8DF.Up2Date
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
