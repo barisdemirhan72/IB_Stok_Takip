@@ -74,7 +74,15 @@ namespace İB_Stok_Takip
 
         private void txtArama_TextChanged(object sender, EventArgs e)
         {
-           
+            string aramaMetni = txtArama.Text.Trim().Replace("'", "''"); // SQL enjeksiyonunu önlemek için
+            string sqlSorgusu = "SELECT ID, ÜRÜN, KATEGORİ FROM urun_tablo";
+
+            if (!string.IsNullOrEmpty(aramaMetni))
+            {
+                sqlSorgusu += $" WHERE ÜRÜN LIKE '%{aramaMetni}%' OR KATEGORİ LIKE '%{aramaMetni}%'";
+            }
+
+            VerileriYukle(sqlSorgusu);
         }
     }
 }
