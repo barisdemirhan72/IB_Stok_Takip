@@ -40,20 +40,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 67);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 54);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(750, 525);
+            this.dataGridView1.Size = new System.Drawing.Size(562, 427);
             this.dataGridView1.TabIndex = 0;
             // 
             // lblUrunlerListesi
             // 
             this.lblUrunlerListesi.AutoSize = true;
             this.lblUrunlerListesi.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUrunlerListesi.Location = new System.Drawing.Point(12, 18);
+            this.lblUrunlerListesi.Location = new System.Drawing.Point(9, 15);
+            this.lblUrunlerListesi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUrunlerListesi.Name = "lblUrunlerListesi";
-            this.lblUrunlerListesi.Size = new System.Drawing.Size(218, 34);
+            this.lblUrunlerListesi.Size = new System.Drawing.Size(173, 27);
             this.lblUrunlerListesi.TabIndex = 1;
             this.lblUrunlerListesi.Text = "Ürünler Listesi";
             // 
@@ -63,9 +65,10 @@
             this.btnSiralaAZ.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSiralaAZ.ForeColor = System.Drawing.Color.Black;
             this.btnSiralaAZ.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiralaAZ.Location = new System.Drawing.Point(782, 149);
+            this.btnSiralaAZ.Location = new System.Drawing.Point(586, 121);
+            this.btnSiralaAZ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSiralaAZ.Name = "btnSiralaAZ";
-            this.btnSiralaAZ.Size = new System.Drawing.Size(349, 64);
+            this.btnSiralaAZ.Size = new System.Drawing.Size(262, 52);
             this.btnSiralaAZ.TabIndex = 6;
             this.btnSiralaAZ.Text = "Ürünleri Sırala [A-Z]";
             this.btnSiralaAZ.UseVisualStyleBackColor = false;
@@ -77,9 +80,10 @@
             this.btnSiralaZA.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSiralaZA.ForeColor = System.Drawing.Color.Black;
             this.btnSiralaZA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiralaZA.Location = new System.Drawing.Point(782, 238);
+            this.btnSiralaZA.Location = new System.Drawing.Point(586, 193);
+            this.btnSiralaZA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSiralaZA.Name = "btnSiralaZA";
-            this.btnSiralaZA.Size = new System.Drawing.Size(349, 64);
+            this.btnSiralaZA.Size = new System.Drawing.Size(262, 52);
             this.btnSiralaZA.TabIndex = 7;
             this.btnSiralaZA.Text = "Ürünleri Sırala [Z-A]";
             this.btnSiralaZA.UseVisualStyleBackColor = false;
@@ -91,9 +95,10 @@
             this.btnSiralaID.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSiralaID.ForeColor = System.Drawing.Color.Black;
             this.btnSiralaID.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSiralaID.Location = new System.Drawing.Point(782, 325);
+            this.btnSiralaID.Location = new System.Drawing.Point(586, 264);
+            this.btnSiralaID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSiralaID.Name = "btnSiralaID";
-            this.btnSiralaID.Size = new System.Drawing.Size(349, 64);
+            this.btnSiralaID.Size = new System.Drawing.Size(262, 52);
             this.btnSiralaID.TabIndex = 8;
             this.btnSiralaID.Text = "Ürünleri Sırala [ID]";
             this.btnSiralaID.UseVisualStyleBackColor = false;
@@ -102,17 +107,18 @@
             // txtArama
             // 
             this.txtArama.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtArama.Location = new System.Drawing.Point(782, 67);
+            this.txtArama.Location = new System.Drawing.Point(586, 54);
+            this.txtArama.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtArama.Name = "txtArama";
-            this.txtArama.Size = new System.Drawing.Size(349, 47);
+            this.txtArama.Size = new System.Drawing.Size(263, 39);
             this.txtArama.TabIndex = 9;
             this.txtArama.TextChanged += new System.EventHandler(this.txtArama_TextChanged);
             // 
             // FormÜrünleriListele
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 611);
+            this.ClientSize = new System.Drawing.Size(857, 496);
             this.Controls.Add(this.txtArama);
             this.Controls.Add(this.btnSiralaID);
             this.Controls.Add(this.btnSiralaZA);
@@ -120,6 +126,7 @@
             this.Controls.Add(this.lblUrunlerListesi);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FormÜrünleriListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

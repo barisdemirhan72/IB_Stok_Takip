@@ -82,7 +82,7 @@ namespace İB_Stok_Takip
                 sqlSorgusu += $" WHERE ÜRÜN LIKE '%{aramaMetni}%' OR KATEGORİ LIKE '%{aramaMetni}%'";
             }
 
-            VerileriYukle(sqlSorgusu);
+           VerileriYukle(sqlSorgusu);
         }
     }
 }

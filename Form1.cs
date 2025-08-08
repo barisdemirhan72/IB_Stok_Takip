@@ -165,5 +165,10 @@ namespace İB_Stok_Takip
                 printDocument.Print();
             }
         }
+
+        private void btnRaporla_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
