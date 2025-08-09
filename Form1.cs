@@ -230,5 +230,11 @@ namespace İB_Stok_Takip
             }
 
         }
+
+        private void btnAlinanUrunler_Click(object sender, EventArgs e)
+        {
+            Form FormAlinanUrunler = new FormAlinanUrunler();
+            FormAlinanUrunler.ShowDialog();
+        }
     }
 }

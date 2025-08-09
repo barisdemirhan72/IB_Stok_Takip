@@ -209,6 +209,7 @@
             this.btnAlinanUrunler.TabIndex = 14;
             this.btnAlinanUrunler.Text = "[«] Alınan Ürünler";
             this.btnAlinanUrunler.UseVisualStyleBackColor = false;
+            this.btnAlinanUrunler.Click += new System.EventHandler(this.btnAlinanUrunler_Click);
             // 
             // Form1
             // 
