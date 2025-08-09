@@ -61,8 +61,7 @@ namespace İB_Stok_Takip
             }
         }
 
-        // Kaydet butonu
-        private void buttonKaydet_Click_1(object sender, EventArgs e)
+        private void btnKaydet_Click(object sender, EventArgs e)
         {
             using (var baglanti = new SQLiteConnection(connectionString))
             {
@@ -85,6 +84,9 @@ namespace İB_Stok_Takip
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
+
+        // Kaydet butonu
+
 
     }
 }

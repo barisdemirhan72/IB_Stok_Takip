@@ -86,7 +86,7 @@
             this.lblDateTime.AutoSize = true;
             this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
             this.lblDateTime.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDateTime.Location = new System.Drawing.Point(1001, 603);
+            this.lblDateTime.Location = new System.Drawing.Point(1001, 650);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(101, 34);
             this.lblDateTime.TabIndex = 2;
@@ -150,7 +150,7 @@
             this.btnYazdir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnYazdir.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnYazdir.ForeColor = System.Drawing.Color.Black;
-            this.btnYazdir.Location = new System.Drawing.Point(1007, 510);
+            this.btnYazdir.Location = new System.Drawing.Point(1007, 567);
             this.btnYazdir.Name = "btnYazdir";
             this.btnYazdir.Size = new System.Drawing.Size(160, 65);
             this.btnYazdir.TabIndex = 9;
@@ -163,7 +163,7 @@
             this.btnRaporla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRaporla.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRaporla.ForeColor = System.Drawing.Color.Black;
-            this.btnRaporla.Location = new System.Drawing.Point(1173, 510);
+            this.btnRaporla.Location = new System.Drawing.Point(1173, 567);
             this.btnRaporla.Name = "btnRaporla";
             this.btnRaporla.Size = new System.Drawing.Size(158, 65);
             this.btnRaporla.TabIndex = 10;

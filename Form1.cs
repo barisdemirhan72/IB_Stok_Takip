@@ -26,7 +26,7 @@ namespace İB_Stok_Takip
             InitializeComponent();
         }
 
-        private void VerileriGetir()
+        private void VerileriGetir(string aramaMetni = "")
         {
             string baglantiDizesi = "Data Source=stok.db;Version=3;";
             try
@@ -34,9 +34,21 @@ namespace İB_Stok_Takip
                 using (SQLiteConnection baglanti = new SQLiteConnection(baglantiDizesi))
                 {
                     baglanti.Open();
+
                     string sql = "SELECT * FROM urun_tablo";
+
+                    if (!string.IsNullOrEmpty(aramaMetni))
+                    {
+                        sql += " WHERE `ÜRÜN ADI` LIKE @arama OR `KATEGORİ` LIKE @arama";
+                    }
+
                     using (SQLiteCommand komut = new SQLiteCommand(sql, baglanti))
                     {
+                        if (!string.IsNullOrEmpty(aramaMetni))
+                        {
+                            komut.Parameters.AddWithValue("@arama", "%" + aramaMetni + "%");
+                        }
+
                         using (SQLiteDataAdapter adaptor = new SQLiteDataAdapter(komut))
                         {
                             DataTable dt = new DataTable();
@@ -51,10 +63,19 @@ namespace İB_Stok_Takip
                 MessageBox.Show("Veritabanına Bağlanılamadı: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
             VerileriGetir();
+
+            // Manuel genişlikler
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+            dataGridView1.Columns["ID"].Width = 50;
+            dataGridView1.Columns["ÜRÜN ADI"].Width = 300;
+            dataGridView1.Columns["BİRİM"].Width = 100;
+            dataGridView1.Columns["KATEGORİ"].Width = 150;
+            dataGridView1.Columns["MİKTAR"].Width = 60;
 
         }
 
@@ -71,7 +92,8 @@ namespace İB_Stok_Takip
 
         private void arama_TextChanged(object sender, EventArgs e)
         {
-
+            string aramaMetni = arama.Text.Trim();
+            VerileriGetir(aramaMetni);
         }
 
         private void btnUrunListele_Click(object sender, EventArgs e)
