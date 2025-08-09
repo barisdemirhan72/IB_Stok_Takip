@@ -206,5 +206,29 @@ namespace İB_Stok_Takip
                 VerileriGetir();
             }
         }
+
+        private void btnUrunSil_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Lütfen silmek istediğiniz ürünü seçiniz.");
+                return;
+            }
+
+            int secilenID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
+            string secilenUrunAdi = dataGridView1.SelectedRows[0].Cells["ÜRÜN ADI"].Value.ToString();
+            string secilenBirim = dataGridView1.SelectedRows[0].Cells["BİRİM"].Value.ToString();
+            string secilenKategori = dataGridView1.SelectedRows[0].Cells["KATEGORİ"].Value.ToString();
+            int secilenMiktar = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["MİKTAR"].Value);
+
+            FormUrunSil silForm = new FormUrunSil(secilenID, secilenUrunAdi, secilenBirim, secilenKategori, secilenMiktar);
+            var result = silForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                VerileriGetir();
+            }
+
+        }
     }
 }

@@ -29,3 +29,5 @@ C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\_B_Stok_.ECBEA8DF.Up2Date
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünDüzenle.resources
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources

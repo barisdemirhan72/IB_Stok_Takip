@@ -133,6 +133,7 @@
             this.btnUrunSil.TabIndex = 6;
             this.btnUrunSil.Text = "[-] Ürün Sil";
             this.btnUrunSil.UseVisualStyleBackColor = false;
+            this.btnUrunSil.Click += new System.EventHandler(this.btnUrunSil_Click);
             // 
             // btnUrunListele
             // 
