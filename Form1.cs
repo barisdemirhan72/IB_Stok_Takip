@@ -26,20 +26,17 @@ namespace İB_Stok_Takip
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void VerileriGetir()
         {
-            timer1.Start();
             string baglantiDizesi = "Data Source=stok.db;Version=3;";
             try
             {
                 using (SQLiteConnection baglanti = new SQLiteConnection(baglantiDizesi))
                 {
                     baglanti.Open();
-                    // SQL Sorgusu
-                    string sql = "SELECT * FROM urun_tablo"; 
+                    string sql = "SELECT * FROM urun_tablo";
                     using (SQLiteCommand komut = new SQLiteCommand(sql, baglanti))
                     {
-                        // Verileri DataTable'a yükle
                         using (SQLiteDataAdapter adaptor = new SQLiteDataAdapter(komut))
                         {
                             DataTable dt = new DataTable();
@@ -53,6 +50,12 @@ namespace İB_Stok_Takip
             {
                 MessageBox.Show("Veritabanına Bağlanılamadı: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+            VerileriGetir();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -69,12 +72,6 @@ namespace İB_Stok_Takip
         private void arama_TextChanged(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnUrunDuzenle_Click(object sender, EventArgs e)
-        {
-            Form FormÜrünDüzenle= new FormÜrünDüzenle();
-            FormÜrünDüzenle.ShowDialog();
         }
 
         private void btnUrunListele_Click(object sender, EventArgs e)
@@ -163,6 +160,21 @@ namespace İB_Stok_Takip
             if (printDialog.ShowDialog() == DialogResult.OK)
             {
                 printDocument.Print();
+            }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                int secilenID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
+
+                FormÜrünDüzenle frm = new FormÜrünDüzenle();
+                frm.UrunID = secilenID;
+                frm.ShowDialog();
+
+                // Düzenleme sonrası DataGridView'i yenile
+                VerileriGetir();
             }
         }
     }
