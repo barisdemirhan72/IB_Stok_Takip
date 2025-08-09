@@ -86,8 +86,15 @@ namespace İB_Stok_Takip
 
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
-            Form FormÜrünekle = new FormÜrünEkle();
-            FormÜrünekle.ShowDialog();
+            using (FormÜrünEkle formEkle = new FormÜrünEkle())
+            {
+                var result = formEkle.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    // Yeni ürün eklendiyse listeyi güncelle
+                    VerileriGetir();
+                }
+            }
         }
 
         private void arama_TextChanged(object sender, EventArgs e)

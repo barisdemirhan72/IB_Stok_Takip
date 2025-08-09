@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.cmbKategori = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblMiktar = new System.Windows.Forms.Label();
+            this.lblKategori = new System.Windows.Forms.Label();
             this.txtUrunAdi = new System.Windows.Forms.TextBox();
             this.lblUrunAdi = new System.Windows.Forms.Label();
             this.lblBirim = new System.Windows.Forms.Label();
@@ -49,25 +49,25 @@
             this.cmbKategori.Size = new System.Drawing.Size(460, 32);
             this.cmbKategori.TabIndex = 18;
             // 
-            // label4
+            // lblMiktar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(14, 237);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 40);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Miktar:";
+            this.lblMiktar.AutoSize = true;
+            this.lblMiktar.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblMiktar.Location = new System.Drawing.Point(14, 237);
+            this.lblMiktar.Name = "lblMiktar";
+            this.lblMiktar.Size = new System.Drawing.Size(118, 40);
+            this.lblMiktar.TabIndex = 15;
+            this.lblMiktar.Text = "Miktar:";
             // 
-            // label3
+            // lblKategori
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(14, 168);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 40);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Kategori:";
+            this.lblKategori.AutoSize = true;
+            this.lblKategori.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKategori.Location = new System.Drawing.Point(14, 168);
+            this.lblKategori.Name = "lblKategori";
+            this.lblKategori.Size = new System.Drawing.Size(149, 40);
+            this.lblKategori.TabIndex = 14;
+            this.lblKategori.Text = "Kategori:";
             // 
             // txtUrunAdi
             // 
@@ -142,8 +142,8 @@
             this.Controls.Add(this.txtBirim);
             this.Controls.Add(this.lblBirim);
             this.Controls.Add(this.cmbKategori);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblMiktar);
+            this.Controls.Add(this.lblKategori);
             this.Controls.Add(this.txtUrunAdi);
             this.Controls.Add(this.lblUrunAdi);
             this.MaximizeBox = false;
@@ -158,8 +158,8 @@
 
         #endregion
         private System.Windows.Forms.ComboBox cmbKategori;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMiktar;
+        private System.Windows.Forms.Label lblKategori;
         private System.Windows.Forms.TextBox txtUrunAdi;
         private System.Windows.Forms.Label lblUrunAdi;
         private System.Windows.Forms.Label lblBirim;

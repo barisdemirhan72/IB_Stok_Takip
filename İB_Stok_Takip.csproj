@@ -82,6 +82,9 @@
     <EmbeddedResource Include="FormÜrünDüzenle.resx">
       <DependentUpon>FormÜrünDüzenle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormÜrünEkle.resx">
+      <DependentUpon>FormÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormÜrünleriListele.resx">
       <DependentUpon>FormÜrünleriListele.cs</DependentUpon>
     </EmbeddedResource>

@@ -45,6 +45,7 @@
             this.lblArama = new System.Windows.Forms.Label();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.btnAlinanUrunler = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -86,7 +87,7 @@
             this.lblDateTime.AutoSize = true;
             this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
             this.lblDateTime.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDateTime.Location = new System.Drawing.Point(1001, 650);
+            this.lblDateTime.Location = new System.Drawing.Point(1010, 706);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(101, 34);
             this.lblDateTime.TabIndex = 2;
@@ -150,7 +151,7 @@
             this.btnYazdir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnYazdir.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnYazdir.ForeColor = System.Drawing.Color.Black;
-            this.btnYazdir.Location = new System.Drawing.Point(1007, 567);
+            this.btnYazdir.Location = new System.Drawing.Point(1007, 607);
             this.btnYazdir.Name = "btnYazdir";
             this.btnYazdir.Size = new System.Drawing.Size(160, 65);
             this.btnYazdir.TabIndex = 9;
@@ -163,7 +164,7 @@
             this.btnRaporla.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRaporla.Font = new System.Drawing.Font("Tahoma", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnRaporla.ForeColor = System.Drawing.Color.Black;
-            this.btnRaporla.Location = new System.Drawing.Point(1173, 567);
+            this.btnRaporla.Location = new System.Drawing.Point(1173, 607);
             this.btnRaporla.Name = "btnRaporla";
             this.btnRaporla.Size = new System.Drawing.Size(158, 65);
             this.btnRaporla.TabIndex = 10;
@@ -197,12 +198,24 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // btnAlinanUrunler
+            // 
+            this.btnAlinanUrunler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAlinanUrunler.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnAlinanUrunler.Location = new System.Drawing.Point(1007, 505);
+            this.btnAlinanUrunler.Name = "btnAlinanUrunler";
+            this.btnAlinanUrunler.Size = new System.Drawing.Size(324, 67);
+            this.btnAlinanUrunler.TabIndex = 14;
+            this.btnAlinanUrunler.Text = "[«] Alınan Ürünler";
+            this.btnAlinanUrunler.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1365, 753);
+            this.Controls.Add(this.btnAlinanUrunler);
             this.Controls.Add(this.lblArama);
             this.Controls.Add(this.arama);
             this.Controls.Add(this.btnRaporla);
@@ -248,6 +261,7 @@
         private System.Windows.Forms.Label lblArama;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.Button btnAlinanUrunler;
     }
 }
 
