@@ -31,3 +31,24 @@ C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünDüzen
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
 C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe.config
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\İB_Stok_Takip.pdb
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\EntityFramework.dll
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\System.Data.SQLite.dll
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.AssemblyReference.cache
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.Form1.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünDüzenle.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.Properties.Resources.resources
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.GenerateResource.cache
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.CoreCompileInputs.cache
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_.ECBEA8DF.Up2Date
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.exe
+C:\Users\morgu\OneDrive\Desktop\Yeni klasör\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.pdb
