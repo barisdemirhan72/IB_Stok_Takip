@@ -194,18 +194,39 @@ namespace İB_Stok_Takip
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+			
+			if (e.RowIndex >= 0)
             {
-                int secilenID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
+				dataGridView1.Rows[e.RowIndex].Selected = true;//2.ekran açıldığında seçili kısmımın arka fontu kaybolabildiği için yazıldı.
 
+                //sayfa yenilendiğinde sayfa haraketlenmesin diye eklendi
+                int firstDisplaed = dataGridView1.FirstDisplayedScrollingRowIndex;
+                int currentRow = e.RowIndex;
+                int currentCol = dataGridView1.CurrentCell.ColumnIndex;
+
+                //ürün ID'si
+				int secilenID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
+                
                 FormÜrünDüzenle frm = new FormÜrünDüzenle();
                 frm.UrunID = secilenID;
                 frm.ShowDialog();
 
                 // Düzenleme sonrası DataGridView'i yenile
                 VerileriGetir();
-            }
-        }
+
+                //scroll pozisyonunu geri yükle
+                if(firstDisplaed>=0 & firstDisplaed< dataGridView1.Rows.Count)
+                {
+                    dataGridView1.FirstDisplayedScrollingRowIndex = firstDisplaed;
+                }
+                //önceki hücreyi seç
+                if(currentRow >=0 && currentRow<dataGridView1.Rows.Count)
+                { dataGridView1.CurrentCell = dataGridView1.Rows[currentRow].Cells[currentCol]; }
+
+                dataGridView1.Rows[e.RowIndex].Selected = true;//sadece hücrenin seçili kalmaması için
+			}
+			
+		}
 
         private void btnUrunSil_Click(object sender, EventArgs e)
         {
@@ -236,5 +257,10 @@ namespace İB_Stok_Takip
             Form FormAlinanUrunler = new FormAlinanUrunler();
             FormAlinanUrunler.ShowDialog();
         }
-    }
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			dataGridView1.Rows[e.RowIndex].Selected = true;
+		}
+	}
 }

@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kZ0DIeImVUA=",
+  "dgSpecHash": "upw8G0XBjvqhZ0PFglKxW1Gb4C0VYIAt9/y6QRv8+1i4bO5TJzMOnrmB/Hlr95qKTW9om2mjYtIzp5omLq/YTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\BARIŞ\\Desktop\\İB_Stok_Takip\\İB_Stok_Takip.csproj",
+  "projectFilePath": "C:\\Users\\morgu\\OneDrive\\Desktop\\Yeni klasör\\IB_Stok_Takip\\İB_Stok_Takip.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\BARIŞ\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
-    "C:\\Users\\BARIŞ\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.119\\stub.system.data.sqlite.core.netframework.1.0.119.nupkg.sha512",
-    "C:\\Users\\BARIŞ\\.nuget\\packages\\system.data.sqlite\\1.0.119\\system.data.sqlite.1.0.119.nupkg.sha512",
-    "C:\\Users\\BARIŞ\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512",
-    "C:\\Users\\BARIŞ\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.119\\system.data.sqlite.ef6.1.0.119.nupkg.sha512",
-    "C:\\Users\\BARIŞ\\.nuget\\packages\\system.data.sqlite.linq\\1.0.119\\system.data.sqlite.linq.1.0.119.nupkg.sha512"
+    "C:\\Users\\morgu\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.119\\stub.system.data.sqlite.core.netframework.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite\\1.0.119\\system.data.sqlite.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.119\\system.data.sqlite.ef6.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite.linq\\1.0.119\\system.data.sqlite.linq.1.0.119.nupkg.sha512"
   ],
   "logs": []
 }
