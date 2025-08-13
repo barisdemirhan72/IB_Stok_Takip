@@ -12,6 +12,10 @@ namespace İB_Stok_Takip
         public FormÜrünleriListele()
         {
             InitializeComponent();
+            // RJButton event bağlama
+            btnSiralaAZ.Click += btnSiralaAZ_Click;
+            btnSiralaID.Click += btnSiralaID_Click;
+            btnSiralaZA.Click += btnSiralaZA_Click;
         }
 
         private void FormÜrünleriListele_Load(object sender, EventArgs e)

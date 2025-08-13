@@ -12,6 +12,7 @@ namespace İB_Stok_Takip
         public FormÜrünEkle()
         {
             InitializeComponent();
+            btnUrunEkle.Click += btnUrunEkle_Click;
         }
 
         private void btnUrunEkle_Click(object sender, EventArgs e)

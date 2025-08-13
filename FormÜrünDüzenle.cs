@@ -13,6 +13,7 @@ namespace İB_Stok_Takip
         public FormÜrünDüzenle()
         {
             InitializeComponent();
+            btnKaydet.Click += btnKaydet_Click;
         }
 
         private void FormÜrünDüzenle_Load(object sender, EventArgs e)

@@ -20,6 +20,15 @@ namespace İB_Stok_Takip
             Birim = birim;
             Kategori = kategori;
             Miktar = miktar;
+
+            // RJButton ve RadioButton event bağlama
+            btnOnayla.Click += btnOnayla_Click;
+            radioBaskaAdinaAldir.CheckedChanged += radioBaskaAdinaAldir_CheckedChanged;
+
+
+            // Varsayılan ayarlar
+            txtAdSoyad.Enabled = false;
+            radioSadeceSil.Checked = true;
         }
 
         private void btnOnayla_Click(object sender, EventArgs e)
@@ -113,15 +122,20 @@ namespace İB_Stok_Takip
 
         private void radioBaskaAdinaAldir_CheckedChanged(object sender, EventArgs e)
         {
-            txtAdSoyad.Enabled = radioBaskaAdinaAldir.Checked;
+            bool aktif = radioBaskaAdinaAldir.Checked;
+            txtAdSoyad.Visible = aktif;
+            lblAdSoyad.Visible = aktif;
+            txtAdSoyad.Enabled = aktif;
+
         }
 
         private void FormUrunSil_Load(object sender, EventArgs e)
         {
-            txtAdSoyad.Enabled = false; // Başlangıçta devre dışı
-            radioSadeceSil.Checked = true; // Varsayılan seçim
+            txtAdSoyad.Visible = false;
+            lblAdSoyad.Visible = false;
+            radioSadeceSil.Checked = true;
+
+            
         }
-
-
     }
 }

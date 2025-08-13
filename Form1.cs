@@ -24,8 +24,24 @@ namespace İB_Stok_Takip
         public Form1()
         {
             InitializeComponent();
+            // RJButton'ların click event bağlantıları
+            btnUrunEkle.Click += btnUrunEkle_Click;
+            btnUrunListele.Click += btnUrunListele_Click;
+            btnYazdir.Click += btnYazdir_Click;
+            btnUrunSil.Click += btnUrunSil_Click;
+            btnAlinanUrunler.Click += btnAlinanUrunler_Click;
         }
-
+        private void SetMdiClientBackColor(Color color)
+        {
+            foreach (Control ctl in this.Controls)
+            {
+                if (ctl is MdiClient)
+                {
+                    ctl.BackColor = color;
+                    break;
+                }
+            }
+        }
         private void VerileriGetir(string aramaMetni = "")
         {
             string baglantiDizesi = "Data Source=stok.db;Version=3;";
@@ -76,7 +92,7 @@ namespace İB_Stok_Takip
             dataGridView1.Columns["BİRİM"].Width = 100;
             dataGridView1.Columns["KATEGORİ"].Width = 150;
             dataGridView1.Columns["MİKTAR"].Width = 60;
-
+            SetMdiClientBackColor(Color.Silver);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
