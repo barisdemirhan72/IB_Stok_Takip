@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "bCtZ2mq7cVHDTQUVyeQ1c07iUjiOlRmTWH9rIYDqCL2CXhjA45rTwfWDnx8pI5PBXWLkUfxV9hM71MQm/B1d6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\morgu\\OneDrive\\Desktop\\proje yeni çekim\\IB_Stok_Takip\\İB_Stok_Takip.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\morgu\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.119\\stub.system.data.sqlite.core.netframework.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite\\1.0.119\\system.data.sqlite.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite.core\\1.0.119\\system.data.sqlite.core.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.119\\system.data.sqlite.ef6.1.0.119.nupkg.sha512",
+    "C:\\Users\\morgu\\.nuget\\packages\\system.data.sqlite.linq\\1.0.119\\system.data.sqlite.linq.1.0.119.nupkg.sha512"
+  ],
+  "logs": []
+}

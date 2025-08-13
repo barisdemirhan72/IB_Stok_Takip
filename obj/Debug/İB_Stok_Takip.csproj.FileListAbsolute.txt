@@ -1,0 +1,104 @@
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe.config
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\bin\Debug\İB_Stok_Takip.pdb
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.AssemblyReference.cache
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.Form1.resources
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.Properties.Resources.resources
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.GenerateResource.cache
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.CoreCompileInputs.cache
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.exe
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.pdb
+C:\Users\BARIŞ\source\repos\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.exe.config
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe.config
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\İB_Stok_Takip.pdb
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.AssemblyReference.cache
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.exe.config
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.Form1.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.Properties.Resources.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.GenerateResource.cache
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.CoreCompileInputs.cache
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.exe
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.pdb
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\EntityFramework.dll
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\System.Data.SQLite.dll
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\_B_Stok_.ECBEA8DF.Up2Date
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünDüzenle.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\İB_Stok_Takip.exe.config
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\İB_Stok_Takip.exe
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\İB_Stok_Takip.pdb
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\EntityFramework.dll
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\System.Data.SQLite.dll
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.csproj.AssemblyReference.cache
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.Form1.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormÜrünDüzenle.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.Properties.Resources.resources
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.csproj.GenerateResource.cache
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.csproj.CoreCompileInputs.cache
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\_B_Stok_.ECBEA8DF.Up2Date
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.exe
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.pdb
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\RJRadioButton.exe
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\RJRadioButton.pdb
+C:\Users\oyuni\AppData\Local\Temp\Rar$DRa22612.47885.rartemp\IB_Stok_Takip-master\bin\Debug\RJRadioButton.exe.config
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\İB_Stok_Takip.exe.config
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\İB_Stok_Takip.exe
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\İB_Stok_Takip.pdb
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\EntityFramework.dll
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\System.Data.SQLite.dll
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\RJRadioButton.pdb
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\bin\Debug\RJRadioButton.exe.config
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.csproj.AssemblyReference.cache
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.exe.config
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.Form1.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormÜrünDüzenle.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.Properties.Resources.resources
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.csproj.GenerateResource.cache
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.csproj.CoreCompileInputs.cache
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\_B_Stok_.ECBEA8DF.Up2Date
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.exe
+C:\Users\BARIŞ\Desktop\IB_Stok_Takip-master\obj\Debug\İB_Stok_Takip.pdb
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe.config
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\İB_Stok_Takip.exe
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\İB_Stok_Takip.pdb
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\EntityFramework.dll
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\System.Data.SQLite.dll
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\RJRadioButton.pdb
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\bin\Debug\RJRadioButton.exe.config
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.AssemblyReference.cache
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.Form1.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormAlinanUrunler.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormUrunSil.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünDüzenle.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünEkle.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.FormÜrünleriListele.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.Properties.Resources.resources
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.GenerateResource.cache
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.csproj.CoreCompileInputs.cache
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_.ECBEA8DF.Up2Date
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.exe
+C:\Users\morgu\OneDrive\Desktop\proje yeni çekim\IB_Stok_Takip\obj\Debug\İB_Stok_Takip.pdb

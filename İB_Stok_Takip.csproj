@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>İB_Stok_Takip</RootNamespace>
+    <AssemblyName>İB_Stok_Takip</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RJRadioButton">
+      <HintPath>..\..\..\..\..\source\repos\RJRadioButton\RJRadioButton\bin\Debug\RJRadioButton.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlinanUrunler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlinanUrunler.Designer.cs">
+      <DependentUpon>FormAlinanUrunler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunSil.Designer.cs">
+      <DependentUpon>FormUrunSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormÜrünDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormÜrünDüzenle.Designer.cs">
+      <DependentUpon>FormÜrünDüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormÜrünEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormÜrünEkle.Designer.cs">
+      <DependentUpon>FormÜrünEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormÜrünleriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormÜrünleriListele.Designer.cs">
+      <DependentUpon>FormÜrünleriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlinanUrunler.resx">
+      <DependentUpon>FormAlinanUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunSil.resx">
+      <DependentUpon>FormUrunSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormÜrünDüzenle.resx">
+      <DependentUpon>FormÜrünDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormÜrünEkle.resx">
+      <DependentUpon>FormÜrünEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormÜrünleriListele.resx">
+      <DependentUpon>FormÜrünleriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Stub.System.Data.SQLite.Core.NetFramework">
+      <Version>1.0.119</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.119</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core">
+      <Version>1.0.119</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.EF6">
+      <Version>1.0.119</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Linq">
+      <Version>1.0.119</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
