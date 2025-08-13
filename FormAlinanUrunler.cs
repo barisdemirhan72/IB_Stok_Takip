@@ -60,6 +60,29 @@ namespace İB_Stok_Takip
         private void FormAlinanUrunler_Load(object sender, EventArgs e)
         {
             VerileriGetir();
-        }
-    }
+            dataGridView1.RowHeadersVisible= false;//boş stun kaldırıldı
+
+			//stunların genişlik ayarı;   
+
+			dataGridView1.Columns["KATEGORI"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;//HÜCRE İÇİNDEKİ VERİYE GÖRE OLUŞUR
+            dataGridView1.Columns["BIRIM"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["ID"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells; 
+            dataGridView1.Columns["ALINAN_TARIH"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["MIKTAR"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["URUN_ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;//BOŞTA KALAN ALANA SIĞACAK ŞEKİLDE AYARLANIR
+            dataGridView1.Columns["AD_SOYAD"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+			//hücre içindeki verilerin hücre içindeki konumu
+
+			dataGridView1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//ındexlerin konumu
+			dataGridView1.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//birimlerin konumu
+			dataGridView1.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//kategori konumu(emin olamadım duruma göre değiştirilebiliriz)
+			dataGridView1.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//miktarların konumu
+			dataGridView1.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//tarih konumu
+
+			dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//başlık kımının yazı konumu
+
+
+		}
+	}
 }
