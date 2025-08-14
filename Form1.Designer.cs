@@ -117,6 +117,7 @@
             // 
             // arama
             // 
+            this.arama.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.arama.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.arama.Location = new System.Drawing.Point(1007, 114);
             this.arama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -284,6 +285,7 @@
             // 
             this.btnTemizle.BackColor = System.Drawing.Color.Red;
             this.btnTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemizle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTemizle.Location = new System.Drawing.Point(1282, 114);
             this.btnTemizle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

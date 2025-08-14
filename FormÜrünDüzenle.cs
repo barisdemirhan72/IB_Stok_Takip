@@ -67,7 +67,7 @@ namespace İB_Stok_Takip
                     {
                         if (dr.Read())
                         {
-                            txtUrunAdi.Text = dr["ÜRÜN ADI"].ToString();
+                            txtUrunAdi.Text = dr["ÜRÜN_ADI"].ToString();
                             cmbbirim.Text = dr["BİRİM"].ToString();
                             cmbKategori.Text = dr["KATEGORİ"].ToString();
                             numericMiktar.Value = Convert.ToDecimal(dr["MİKTAR"]);
@@ -83,7 +83,7 @@ namespace İB_Stok_Takip
             {
                 baglanti.Open();
                 using (var cmd = new SQLiteCommand(@"UPDATE urun_tablo 
-                    SET `ÜRÜN ADI`=@urunAdi, `BİRİM`=@birim, `KATEGORİ`=@kategori, `MİKTAR`=@miktar
+                    SET `ÜRÜN_ADI`=@urunAdi, `BİRİM`=@birim, `KATEGORİ`=@kategori, `MİKTAR`=@miktar
                     WHERE ID=@id", baglanti))
                 {
                     cmd.Parameters.AddWithValue("@urunAdi", txtUrunAdi.Text);

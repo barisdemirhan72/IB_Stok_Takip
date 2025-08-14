@@ -102,6 +102,7 @@
             // 
             // txtUrunAdi
             // 
+            this.txtUrunAdi.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUrunAdi.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUrunAdi.Location = new System.Drawing.Point(179, 101);
             this.txtUrunAdi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -166,7 +167,7 @@
             this.btnUrunEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunEkle.Image")));
             this.btnUrunEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUrunEkle.Location = new System.Drawing.Point(155, 384);
-            this.btnUrunEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUrunEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnUrunEkle.Name = "btnUrunEkle";
             this.btnUrunEkle.Size = new System.Drawing.Size(256, 64);
             this.btnUrunEkle.TabIndex = 34;

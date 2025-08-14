@@ -126,3 +126,5 @@ C:\Users\BARIŞ\Desktop\deneme\IB_Stok_Takip-version_2\obj\Debug\İB_Stok_Takip.
 C:\Users\BARIŞ\Desktop\deneme\IB_Stok_Takip-version_2\obj\Debug\_B_Stok_.ECBEA8DF.Up2Date
 C:\Users\BARIŞ\Desktop\deneme\IB_Stok_Takip-version_2\obj\Debug\İB_Stok_Takip.exe
 C:\Users\BARIŞ\Desktop\deneme\IB_Stok_Takip-version_2\obj\Debug\İB_Stok_Takip.pdb
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\RJRadioButton.pdb
+C:\Users\BARIŞ\Desktop\İB_Stok_Takip\bin\Debug\RJRadioButton.exe.config

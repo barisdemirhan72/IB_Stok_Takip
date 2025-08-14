@@ -29,14 +29,14 @@ namespace İB_Stok_Takip
 
                     string sql = @"SELECT 
                                     ID, 
-                                    `ÜRÜN ADI` AS URUN_ADI, 
-                                    `BİRİM` AS BIRIM, 
-                                    `KATEGORİ` AS KATEGORI, 
-                                    `MİKTAR` AS MIKTAR, 
-                                    `AD SOYAD` AS AD_SOYAD, 
-                                    `ALINAN TARİH` AS ALINAN_TARIH 
+                                    ÜRÜN_ADI AS URUN_ADI, 
+                                    BİRİM AS BIRIM, 
+                                    KATEGORİ AS KATEGORI, 
+                                    MİKTAR AS MIKTAR, 
+                                    AD_SOYAD AS AD_SOYAD, 
+                                    ALINAN_TARIH AS ALINAN_TARIH 
                                    FROM urun_alinan 
-                                   ORDER BY `ALINAN TARİH` DESC";
+                                   ORDER BY ALINAN_TARIH DESC";
 
                     using (SQLiteCommand komut = new SQLiteCommand(sql, baglanti))
                     {
@@ -54,35 +54,37 @@ namespace İB_Stok_Takip
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Veri çekme hatası: " + ex.Message);
+                MessageBox.Show("Veri çekme hatası: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void FormAlinanUrunler_Load(object sender, EventArgs e)
         {
             VerileriGetir();
-            dataGridView1.RowHeadersVisible= false;//boş stun kaldırıldı
+            dataGridView1.RowHeadersVisible = false; // Boş sütunu kaldır
 
-			//stunların genişlik ayarı;   
-
-			dataGridView1.Columns["KATEGORI"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;//HÜCRE İÇİNDEKİ VERİYE GÖRE OLUŞUR
+            // Sütunların genişlik ayarı
+            dataGridView1.Columns["KATEGORI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns["BIRIM"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridView1.Columns["ID"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells; 
-            dataGridView1.Columns["ALINAN_TARIH"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridView1.Columns["MIKTAR"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridView1.Columns["URUN_ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;//BOŞTA KALAN ALANA SIĞACAK ŞEKİLDE AYARLANIR
+            dataGridView1.Columns["ID"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["ALINAN_TARIH"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["MIKTAR"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["URUN_ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataGridView1.Columns["AD_SOYAD"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
-			//hücre içindeki verilerin hücre içindeki konumu
+            // Hücre içindeki verilerin hizalaması
+            dataGridView1.Columns["ID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["BIRIM"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["KATEGORI"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["MIKTAR"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["AD_SOYAD"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["ALINAN_TARIH"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-			dataGridView1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//ındexlerin konumu
-			dataGridView1.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//birimlerin konumu
-			dataGridView1.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//kategori konumu(emin olamadım duruma göre değiştirilebiliriz)
-			dataGridView1.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//miktarların konumu
-			dataGridView1.Columns[5].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//tarih konumu
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
 
-			dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//başlık kımının yazı konumu
-
-
-		}
-	}
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+        }
+    }
 }

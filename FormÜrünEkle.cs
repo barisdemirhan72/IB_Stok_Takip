@@ -47,7 +47,7 @@ namespace İB_Stok_Takip
                         }
                     }
 
-                    string insertSQL = @"INSERT INTO urun_tablo (ID, `ÜRÜN ADI`, `BİRİM`, `KATEGORİ`, `MİKTAR`) 
+                    string insertSQL = @"INSERT INTO urun_tablo (ID, `ÜRÜN_ADI`, `BİRİM`, `KATEGORİ`, `MİKTAR`) 
                                          VALUES (@id, @urunAdi, @birim, @kategori, @miktar)";
 
                     using (SQLiteCommand komutInsert = new SQLiteCommand(insertSQL, baglanti))

@@ -22,10 +22,10 @@
             this.lblAdSoyad = new System.Windows.Forms.Label();
             this.btnOnayla = new İB_Stok_Takip.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.radioSadeceSil = new İB_Stok_Takip.RJRadioButton();
             this.radioBaskaAdinaAldir = new İB_Stok_Takip.RJRadioButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -35,16 +35,16 @@
             this.txtAdSoyad.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtAdSoyad.Location = new System.Drawing.Point(32, 201);
             this.txtAdSoyad.Name = "txtAdSoyad";
-            this.txtAdSoyad.Size = new System.Drawing.Size(286, 34);
+            this.txtAdSoyad.Size = new System.Drawing.Size(327, 40);
             this.txtAdSoyad.TabIndex = 3;
             // 
             // lblAdSoyad
             // 
             this.lblAdSoyad.AutoSize = true;
             this.lblAdSoyad.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblAdSoyad.Location = new System.Drawing.Point(28, 175);
+            this.lblAdSoyad.Location = new System.Drawing.Point(50, 169);
             this.lblAdSoyad.Name = "lblAdSoyad";
-            this.lblAdSoyad.Size = new System.Drawing.Size(237, 23);
+            this.lblAdSoyad.Size = new System.Drawing.Size(293, 29);
             this.lblAdSoyad.TabIndex = 2;
             this.lblAdSoyad.Text = "Alan Kişinin Adı Soyadı:";
             // 
@@ -61,7 +61,7 @@
             this.btnOnayla.ForeColor = System.Drawing.Color.White;
             this.btnOnayla.Image = ((System.Drawing.Image)(resources.GetObject("btnOnayla.Image")));
             this.btnOnayla.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.btnOnayla.Location = new System.Drawing.Point(101, 253);
+            this.btnOnayla.Location = new System.Drawing.Point(115, 253);
             this.btnOnayla.Name = "btnOnayla";
             this.btnOnayla.Size = new System.Drawing.Size(164, 49);
             this.btnOnayla.TabIndex = 5;
@@ -77,8 +77,20 @@
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(375, 55);
+            this.panel1.Size = new System.Drawing.Size(386, 55);
             this.panel1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(110, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Ürün Sil / Al";
             // 
             // pictureBox2
             // 
@@ -102,7 +114,7 @@
             this.radioSadeceSil.MinimumSize = new System.Drawing.Size(0, 21);
             this.radioSadeceSil.Name = "radioSadeceSil";
             this.radioSadeceSil.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.radioSadeceSil.Size = new System.Drawing.Size(286, 27);
+            this.radioSadeceSil.Size = new System.Drawing.Size(353, 33);
             this.radioSadeceSil.TabIndex = 8;
             this.radioSadeceSil.TabStop = true;
             this.radioSadeceSil.Text = "Ürünü Sadece Listeden Sil";
@@ -120,29 +132,17 @@
             this.radioBaskaAdinaAldir.MinimumSize = new System.Drawing.Size(0, 21);
             this.radioBaskaAdinaAldir.Name = "radioBaskaAdinaAldir";
             this.radioBaskaAdinaAldir.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.radioBaskaAdinaAldir.Size = new System.Drawing.Size(255, 27);
+            this.radioBaskaAdinaAldir.Size = new System.Drawing.Size(311, 33);
             this.radioBaskaAdinaAldir.TabIndex = 9;
             this.radioBaskaAdinaAldir.TabStop = true;
             this.radioBaskaAdinaAldir.Text = "Ürünü Bir Kişi Adına Al";
             this.radioBaskaAdinaAldir.UnCheckedColor = System.Drawing.Color.Gray;
             this.radioBaskaAdinaAldir.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(110, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 27);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Ürün Sil / Al";
-            // 
             // FormUrunSil
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(370, 314);
+            this.ClientSize = new System.Drawing.Size(385, 314);
             this.Controls.Add(this.radioBaskaAdinaAldir);
             this.Controls.Add(this.radioSadeceSil);
             this.Controls.Add(this.panel1);

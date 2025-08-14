@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\İB_Stok_Takip.csproj": {}
+    "C:\\Users\\BARIŞ\\Desktop\\İB_Stok_Takip\\İB_Stok_Takip.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\İB_Stok_Takip.csproj": {
+    "C:\\Users\\BARIŞ\\Desktop\\İB_Stok_Takip\\İB_Stok_Takip.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\İB_Stok_Takip.csproj",
+        "projectUniqueName": "C:\\Users\\BARIŞ\\Desktop\\İB_Stok_Takip\\İB_Stok_Takip.csproj",
         "projectName": "İB_Stok_Takip",
-        "projectPath": "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\İB_Stok_Takip.csproj",
+        "projectPath": "C:\\Users\\BARIŞ\\Desktop\\İB_Stok_Takip\\İB_Stok_Takip.csproj",
         "packagesPath": "C:\\Users\\BARIŞ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\obj\\",
+        "outputPath": "C:\\Users\\BARIŞ\\Desktop\\İB_Stok_Takip\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,

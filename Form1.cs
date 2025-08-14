@@ -31,6 +31,7 @@ namespace İB_Stok_Takip
             btnUrunSil.Click += btnUrunSil_Click;
             btnAlinanUrunler.Click += btnAlinanUrunler_Click;
         }
+
         private void SetMdiClientBackColor(Color color)
         {
             foreach (Control ctl in this.Controls)
@@ -42,6 +43,7 @@ namespace İB_Stok_Takip
                 }
             }
         }
+
         private void VerileriGetir(string aramaMetni = "")
         {
             string baglantiDizesi = "Data Source=stok.db;Version=3;";
@@ -55,7 +57,7 @@ namespace İB_Stok_Takip
 
                     if (!string.IsNullOrEmpty(aramaMetni))
                     {
-                        sql += " WHERE `ÜRÜN ADI` LIKE @arama OR `KATEGORİ` LIKE @arama";
+                        sql += " WHERE ÜRÜN_ADI LIKE @arama OR KATEGORİ LIKE @arama"; // Düzeltme: `ÜRÜN ADI` → `ÜRÜN_ADI`
                     }
 
                     using (SQLiteCommand komut = new SQLiteCommand(sql, baglanti))
@@ -85,25 +87,22 @@ namespace İB_Stok_Takip
             timer1.Start();
             VerileriGetir();
 
-            //stunların genişlik ayarı;           
-         
-            dataGridView1.Columns["ID"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells; //hücre genişliği veriye göre şekillensin
-            dataGridView1.Columns["ÜRÜN ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;//hücre genişliği panelin arta kalan kısmına göre
-            dataGridView1.Columns["BİRİM"].AutoSizeMode=DataGridViewAutoSizeColumnMode.AllCells;
+            // Sütunların genişlik ayarı
+            dataGridView1.Columns["ID"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridView1.Columns["ÜRÜN_ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // Düzeltme: `ÜRÜN ADI` → `ÜRÜN_ADI`
+            dataGridView1.Columns["BİRİM"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns["KATEGORİ"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns["MİKTAR"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             SetMdiClientBackColor(Color.Silver);
 
-            //hücre içindeki verilerin hücre içindeki konumu
+            // Hücre içindeki verilerin hizalaması
+            dataGridView1.Columns["ID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["BİRİM"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["KATEGORİ"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Columns["MİKTAR"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-			dataGridView1.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//ındexlerin konumu
-			dataGridView1.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//birimlerin konumu
-			dataGridView1.Columns[3].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//kategori konumu(emin olamadım duruma göre değiştirilebiliriz)
-			dataGridView1.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;//miktarların konumu
-			dataGridView1.ColumnHeadersDefaultCellStyle.Alignment= DataGridViewContentAlignment.MiddleCenter;//başlık kımının yazı konumu
-			
-			dataGridView1.RowHeadersVisible=false; //ilk(boş) stunu kaldırır.
-         
+            dataGridView1.RowHeadersVisible = false; // İlk (boş) sütunu kaldır
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -118,7 +117,6 @@ namespace İB_Stok_Takip
                 var result = formEkle.ShowDialog();
                 if (result == DialogResult.OK)
                 {
-                    // Yeni ürün eklendiyse listeyi güncelle
                     VerileriGetir();
                     arama.Text = "";
                 }
@@ -136,10 +134,11 @@ namespace İB_Stok_Takip
             Form FormÜrünleriListele = new FormÜrünleriListele();
             FormÜrünleriListele.ShowDialog();
         }
-        
+
         PrintDocument printDocument = new PrintDocument();
         PrintDialog printDialog = new PrintDialog();
-        int satirIndex = 0; 
+        int satirIndex = 0;
+
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int baslangicX = 50;
@@ -149,7 +148,7 @@ namespace İB_Stok_Takip
             Brush brush = Brushes.Black;
             StringFormat stringFormat = new StringFormat
             {
-                Trimming = StringTrimming.EllipsisCharacter, // Uzun metinleri kes
+                Trimming = StringTrimming.EllipsisCharacter,
                 FormatFlags = StringFormatFlags.LineLimit
             };
 
@@ -159,7 +158,6 @@ namespace İB_Stok_Takip
                 SizeF baslikBoyut = e.Graphics.MeasureString(dataGridView1.Columns[i].HeaderText, font);
                 sutunGenislikleri[i] = Math.Max(baslikBoyut.Width, 100);
 
-                // Satırlardaki en uzun metni kontrol et
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
                     if (row.Cells[i].Value != null)
@@ -224,32 +222,26 @@ namespace İB_Stok_Takip
         {
             if (e.RowIndex >= 0)
             {
-                dataGridView1.Rows[e.RowIndex].Selected = true; //2.ekran açıldığında seçili kısmımın arka fontu kaybolabildiği için yazıldı.
+                dataGridView1.Rows[e.RowIndex].Selected = true;
 
-                //sayfa yenilendiğinde sayfa haraketlenmesini engelliğen özelliğin konumları
                 int firstDisplaed = dataGridView1.FirstDisplayedScrollingRowIndex;
                 int currentRow = e.RowIndex;
                 int currentCol = dataGridView1.CurrentCell.ColumnIndex;
 
-                //ürün ID'si
-				int secilenID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
-
+                int secilenID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
 
                 FormÜrünDüzenle frm = new FormÜrünDüzenle();
                 frm.UrunID = secilenID;
                 frm.ShowDialog();
 
-                // Düzenleme sonrası DataGridView'i yenile
                 VerileriGetir();
 
-                //scroll pozisyonunu geri yükle(grid'deki sağ terefteki kaydırma imlecinin konumu)
                 if (firstDisplaed >= 0 && firstDisplaed < dataGridView1.Rows.Count)
-                { dataGridView1.FirstDisplayedScrollingRowIndex = firstDisplaed; }
+                {
+                    dataGridView1.FirstDisplayedScrollingRowIndex = firstDisplaed;
+                }
 
-                //önceki hücreyi seç
-                { dataGridView1.CurrentCell = dataGridView1.Rows[currentRow].Cells[currentCol]; }
-
-                //liste yenilendiğinde sadece hücrenin seçili kalmaması için
+                dataGridView1.CurrentCell = dataGridView1.Rows[currentRow].Cells[currentCol];
                 dataGridView1.Rows[e.RowIndex].Selected = true;
             }
         }
@@ -263,7 +255,7 @@ namespace İB_Stok_Takip
             }
 
             int secilenID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
-            string secilenUrunAdi = dataGridView1.SelectedRows[0].Cells["ÜRÜN ADI"].Value.ToString();
+            string secilenUrunAdi = dataGridView1.SelectedRows[0].Cells["ÜRÜN_ADI"].Value.ToString(); // Düzeltme: `ÜRÜN ADI` → `ÜRÜN_ADI`
             string secilenBirim = dataGridView1.SelectedRows[0].Cells["BİRİM"].Value.ToString();
             string secilenKategori = dataGridView1.SelectedRows[0].Cells["KATEGORİ"].Value.ToString();
             int secilenMiktar = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["MİKTAR"].Value);
@@ -276,7 +268,6 @@ namespace İB_Stok_Takip
                 VerileriGetir();
                 arama.Text = "";
             }
-
         }
 
         private void btnAlinanUrunler_Click(object sender, EventArgs e)
@@ -286,7 +277,12 @@ namespace İB_Stok_Takip
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        { dataGridView1.Rows[e.RowIndex].Selected= true; }
+        {
+            if (e.RowIndex >= 0)
+            {
+                dataGridView1.Rows[e.RowIndex].Selected = true;
+            }
+        }
 
         private void btnTemizle_Click(object sender, EventArgs e)
         {
