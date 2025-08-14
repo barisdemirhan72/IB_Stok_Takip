@@ -18,7 +18,7 @@ namespace İB_Stok_Takip
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
             string urunAdi = txtUrunAdi.Text.Trim();
-            string birim = txtBirim.Text.Trim();
+            string birim = cmbbirim.Text.Trim();
             string kategori = cmbKategori.Text.Trim();
             int miktar = (int)numericMiktar.Value;
 
@@ -86,9 +86,26 @@ namespace İB_Stok_Takip
                 }
             }
         }
+
+        private void birimleriYukle()
+        {
+            using (var baglanti = new SQLiteConnection(connectionString))
+            {
+                baglanti.Open();
+                using (var cmd = new SQLiteCommand("SELECT DISTINCT BİRİM FROM urun_tablo", baglanti))
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        cmbbirim.Items.Add(dr["BİRİM"].ToString());
+                    }
+                }
+            }
+        }
         private void FormÜrünEkle_Load(object sender, EventArgs e)
         {
             KategorileriYukle();
+            birimleriYukle();
             
         }
     }

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormÜrünEkle));
             this.numericMiktar = new System.Windows.Forms.NumericUpDown();
-            this.txtBirim = new System.Windows.Forms.TextBox();
             this.lblBirim = new System.Windows.Forms.Label();
             this.cmbKategori = new System.Windows.Forms.ComboBox();
             this.lblMiktar = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnUrunEkle = new İB_Stok_Takip.RJButton();
+            this.cmbbirim = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericMiktar)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,34 +49,24 @@
             // numericMiktar
             // 
             this.numericMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.numericMiktar.Location = new System.Drawing.Point(133, 248);
-            this.numericMiktar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericMiktar.Location = new System.Drawing.Point(177, 305);
+            this.numericMiktar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericMiktar.Maximum = new decimal(new int[] {
             1000000,
             0,
             0,
             0});
             this.numericMiktar.Name = "numericMiktar";
-            this.numericMiktar.Size = new System.Drawing.Size(90, 35);
+            this.numericMiktar.Size = new System.Drawing.Size(120, 41);
             this.numericMiktar.TabIndex = 31;
-            // 
-            // txtBirim
-            // 
-            this.txtBirim.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBirim.Location = new System.Drawing.Point(133, 135);
-            this.txtBirim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtBirim.Name = "txtBirim";
-            this.txtBirim.Size = new System.Drawing.Size(322, 34);
-            this.txtBirim.TabIndex = 30;
             // 
             // lblBirim
             // 
             this.lblBirim.AutoSize = true;
             this.lblBirim.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBirim.Location = new System.Drawing.Point(11, 135);
-            this.lblBirim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBirim.Location = new System.Drawing.Point(15, 166);
             this.lblBirim.Name = "lblBirim";
-            this.lblBirim.Size = new System.Drawing.Size(94, 33);
+            this.lblBirim.Size = new System.Drawing.Size(114, 40);
             this.lblBirim.TabIndex = 29;
             this.lblBirim.Text = "Birim: ";
             // 
@@ -84,20 +74,19 @@
             // 
             this.cmbKategori.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbKategori.FormattingEnabled = true;
-            this.cmbKategori.Location = new System.Drawing.Point(133, 200);
-            this.cmbKategori.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbKategori.Location = new System.Drawing.Point(177, 246);
+            this.cmbKategori.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbKategori.Name = "cmbKategori";
-            this.cmbKategori.Size = new System.Drawing.Size(322, 27);
+            this.cmbKategori.Size = new System.Drawing.Size(428, 32);
             this.cmbKategori.TabIndex = 28;
             // 
             // lblMiktar
             // 
             this.lblMiktar.AutoSize = true;
             this.lblMiktar.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblMiktar.Location = new System.Drawing.Point(11, 249);
-            this.lblMiktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMiktar.Location = new System.Drawing.Point(15, 306);
             this.lblMiktar.Name = "lblMiktar";
-            this.lblMiktar.Size = new System.Drawing.Size(98, 33);
+            this.lblMiktar.Size = new System.Drawing.Size(118, 40);
             this.lblMiktar.TabIndex = 27;
             this.lblMiktar.Text = "Miktar:";
             // 
@@ -105,30 +94,28 @@
             // 
             this.lblKategori.AutoSize = true;
             this.lblKategori.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKategori.Location = new System.Drawing.Point(11, 193);
-            this.lblKategori.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblKategori.Location = new System.Drawing.Point(15, 238);
             this.lblKategori.Name = "lblKategori";
-            this.lblKategori.Size = new System.Drawing.Size(124, 33);
+            this.lblKategori.Size = new System.Drawing.Size(149, 40);
             this.lblKategori.TabIndex = 26;
             this.lblKategori.Text = "Kategori:";
             // 
             // txtUrunAdi
             // 
             this.txtUrunAdi.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUrunAdi.Location = new System.Drawing.Point(134, 82);
-            this.txtUrunAdi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUrunAdi.Location = new System.Drawing.Point(179, 101);
+            this.txtUrunAdi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUrunAdi.Name = "txtUrunAdi";
-            this.txtUrunAdi.Size = new System.Drawing.Size(321, 34);
+            this.txtUrunAdi.Size = new System.Drawing.Size(427, 40);
             this.txtUrunAdi.TabIndex = 25;
             // 
             // lblUrunAdi
             // 
             this.lblUrunAdi.AutoSize = true;
             this.lblUrunAdi.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblUrunAdi.Location = new System.Drawing.Point(11, 79);
-            this.lblUrunAdi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblUrunAdi.Location = new System.Drawing.Point(15, 97);
             this.lblUrunAdi.Name = "lblUrunAdi";
-            this.lblUrunAdi.Size = new System.Drawing.Size(128, 33);
+            this.lblUrunAdi.Size = new System.Drawing.Size(155, 40);
             this.lblUrunAdi.TabIndex = 24;
             this.lblUrunAdi.Text = "Ürün Adı:";
             // 
@@ -137,10 +124,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(118)))), ((int)(((byte)(179)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-2, -3);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-3, -4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(466, 57);
+            this.panel1.Size = new System.Drawing.Size(621, 70);
             this.panel1.TabIndex = 33;
             // 
             // label1
@@ -148,10 +135,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(113, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(151, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 27);
+            this.label1.Size = new System.Drawing.Size(151, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ürün Ekle";
             // 
@@ -159,9 +145,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 57);
+            this.pictureBox1.Size = new System.Drawing.Size(95, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -179,30 +165,41 @@
             this.btnUrunEkle.ForeColor = System.Drawing.Color.White;
             this.btnUrunEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunEkle.Image")));
             this.btnUrunEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrunEkle.Location = new System.Drawing.Point(116, 312);
+            this.btnUrunEkle.Location = new System.Drawing.Point(155, 384);
+            this.btnUrunEkle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUrunEkle.Name = "btnUrunEkle";
-            this.btnUrunEkle.Size = new System.Drawing.Size(192, 52);
+            this.btnUrunEkle.Size = new System.Drawing.Size(256, 64);
             this.btnUrunEkle.TabIndex = 34;
             this.btnUrunEkle.Text = "  Ürün Ekle";
             this.btnUrunEkle.TextColor = System.Drawing.Color.White;
             this.btnUrunEkle.UseVisualStyleBackColor = false;
             // 
+            // cmbbirim
+            // 
+            this.cmbbirim.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbbirim.FormattingEnabled = true;
+            this.cmbbirim.Location = new System.Drawing.Point(177, 176);
+            this.cmbbirim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbbirim.Name = "cmbbirim";
+            this.cmbbirim.Size = new System.Drawing.Size(428, 32);
+            this.cmbbirim.TabIndex = 35;
+            // 
             // FormÜrünEkle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 376);
+            this.ClientSize = new System.Drawing.Size(617, 463);
+            this.Controls.Add(this.cmbbirim);
             this.Controls.Add(this.btnUrunEkle);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.numericMiktar);
-            this.Controls.Add(this.txtBirim);
             this.Controls.Add(this.lblBirim);
             this.Controls.Add(this.cmbKategori);
             this.Controls.Add(this.lblMiktar);
             this.Controls.Add(this.lblKategori);
             this.Controls.Add(this.txtUrunAdi);
             this.Controls.Add(this.lblUrunAdi);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormÜrünEkle";
             this.Text = "Ürün Ekle";
             this.Load += new System.EventHandler(this.FormÜrünEkle_Load);
@@ -217,7 +214,6 @@
 
         #endregion
         private System.Windows.Forms.NumericUpDown numericMiktar;
-        private System.Windows.Forms.TextBox txtBirim;
         private System.Windows.Forms.Label lblBirim;
         private System.Windows.Forms.ComboBox cmbKategori;
         private System.Windows.Forms.Label lblMiktar;
@@ -228,5 +224,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RJButton btnUrunEkle;
+        private System.Windows.Forms.ComboBox cmbbirim;
     }
 }

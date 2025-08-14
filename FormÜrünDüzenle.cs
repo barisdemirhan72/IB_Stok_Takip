@@ -20,6 +20,7 @@ namespace İB_Stok_Takip
         {
             KategorileriYukle();
             UrunBilgileriniGetir();
+            birimleriYukle();
         }
 
         // Combobox'a benzersiz kategorileri yükle
@@ -38,7 +39,21 @@ namespace İB_Stok_Takip
                 }
             }
         }
-
+        private void birimleriYukle()
+        {
+            using (var baglanti = new SQLiteConnection(connectionString))
+            {
+                baglanti.Open();
+                using (var cmd = new SQLiteCommand("SELECT DISTINCT BİRİM FROM urun_tablo", baglanti))
+                using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        cmbbirim.Items.Add(dr["BİRİM"].ToString());
+                    }
+                }
+            }
+        }
         // Seçilen ürünün bilgilerini TextBox ve ComboBox'a aktar
         private void UrunBilgileriniGetir()
         {
@@ -53,7 +68,7 @@ namespace İB_Stok_Takip
                         if (dr.Read())
                         {
                             txtUrunAdi.Text = dr["ÜRÜN ADI"].ToString();
-                            txtBirim.Text = dr["BİRİM"].ToString();
+                            cmbbirim.Text = dr["BİRİM"].ToString();
                             cmbKategori.Text = dr["KATEGORİ"].ToString();
                             numericMiktar.Value = Convert.ToDecimal(dr["MİKTAR"]);
                         }
@@ -72,7 +87,7 @@ namespace İB_Stok_Takip
                     WHERE ID=@id", baglanti))
                 {
                     cmd.Parameters.AddWithValue("@urunAdi", txtUrunAdi.Text);
-                    cmd.Parameters.AddWithValue("@birim", txtBirim.Text);
+                    cmd.Parameters.AddWithValue("@birim", cmbbirim.Text);
                     cmd.Parameters.AddWithValue("@kategori", cmbKategori.Text);
                     cmd.Parameters.AddWithValue("@miktar", numericMiktar.Value);
                     cmd.Parameters.AddWithValue("@id", UrunID);
@@ -86,7 +101,7 @@ namespace İB_Stok_Takip
             this.Close();
         }
 
-        // Kaydet butonu
+        
 
 
     }

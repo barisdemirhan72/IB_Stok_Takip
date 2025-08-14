@@ -3,19 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|c:\\users\\bari\u015F\\desktop\\\u0130b_stok_takip\\formurunsil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formurunsil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formurunsil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formurunsil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formalinanurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formalinanurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|c:\\users\\bari\u015F\\desktop\\\u0130b_stok_takip\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,12 +11,24 @@
       "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formurunsil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formurunsil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formurunsil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formurunsil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formalinanurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formalinanurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formalinanurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formalinanurunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\formurunsil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|solutionrelative:formurunsil.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E05AC6AB-D718-46B2-8EC8-4A3A9F5BD990}|\u0130B_Stok_Takip.csproj|C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\form\u00FCr\u00FCnd\u00FCzenle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FormAlinanUrunler.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\FormAlinanUrunler.cs",
               "RelativeDocumentMoniker": "FormAlinanUrunler.cs",
@@ -113,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "FormUrunSil.Designer.cs",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\FormUrunSil.Designer.cs",
               "RelativeDocumentMoniker": "FormUrunSil.Designer.cs",
@@ -121,12 +121,11 @@
               "RelativeToolTip": "FormUrunSil.Designer.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAmwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T19:39:18.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T19:39:18.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "FormUrunSil.cs",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\FormUrunSil.cs",
               "RelativeDocumentMoniker": "FormUrunSil.cs",
@@ -134,47 +133,47 @@
               "RelativeToolTip": "FormUrunSil.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T19:38:54.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-09T19:38:54.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormUrunSil.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\FormUrunSil.cs",
               "RelativeDocumentMoniker": "FormUrunSil.cs",
               "ToolTip": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\FormUrunSil.cs [Tasar\u0131m]",
               "RelativeToolTip": "FormUrunSil.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-09T19:34:51.453Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2025-08-09T19:34:51.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Tasar\u0131m]",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\Form1.cs [Tasar\u0131m]",
-              "RelativeToolTip": "Form1.cs [Tasar\u0131m]",
+              "ToolTip": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T17:43:21.665Z"
+              "WhenOpened": "2025-08-02T17:43:21.665Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAwHwAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAwGwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T18:05:29.902Z"
+              "WhenOpened": "2025-08-02T18:05:29.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "FormAlinanUrunler.cs",
               "DocumentMoniker": "C:\\Users\\BARI\u015E\\Desktop\\\u0130B_Stok_Takip\\FormAlinanUrunler.cs",
               "RelativeDocumentMoniker": "FormAlinanUrunler.cs",

@@ -603,11 +603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BARIŞ\\Desktop\\IB_Stok_Takip-master\\İB_Stok_Takip.csproj",
+      "projectUniqueName": "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\İB_Stok_Takip.csproj",
       "projectName": "İB_Stok_Takip",
-      "projectPath": "C:\\Users\\BARIŞ\\Desktop\\IB_Stok_Takip-master\\İB_Stok_Takip.csproj",
+      "projectPath": "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\İB_Stok_Takip.csproj",
       "packagesPath": "C:\\Users\\BARIŞ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BARIŞ\\Desktop\\IB_Stok_Takip-master\\obj\\",
+      "outputPath": "C:\\Users\\BARIŞ\\Desktop\\deneme\\IB_Stok_Takip-version_2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
