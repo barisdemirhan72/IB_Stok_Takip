@@ -78,6 +78,7 @@
             // 
             // txtUrunAdi
             // 
+            this.txtUrunAdi.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.txtUrunAdi.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtUrunAdi.Location = new System.Drawing.Point(172, 75);
             this.txtUrunAdi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -166,7 +167,7 @@
             this.btnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("btnKaydet.Image")));
             this.btnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKaydet.Location = new System.Drawing.Point(200, 351);
-            this.btnKaydet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKaydet.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(240, 59);
             this.btnKaydet.TabIndex = 25;
