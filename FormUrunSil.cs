@@ -105,7 +105,7 @@ namespace İB_Stok_Takip
                         komutInsert.ExecuteNonQuery();
                     }
                 }
-                MessageBox.Show("Ürün başkası adına aldırıldı ve silindi.");
+                MessageBox.Show("Ürün başkası adına alındı ve silindi.");
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }

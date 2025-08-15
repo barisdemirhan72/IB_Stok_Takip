@@ -1,0 +1,43 @@
+İSKENDERUN BELEDİYESİ - STOK TAKİP UYGULAMASI
+Uygulamayı açtığınızda stok bilgileri listelenir. Yeni ürün ekleyebilir, listeden ürün düzenleyebilir veya silebilirsiniz. 
+"Alınan Ürünler" bölümünde başka birinin adına alınan kayıtları görebilir ve raporlayabilirsiniz. 
+Yazdırma ile mevcut tabloyu çıktı alabilirsiniz.
+
+Giriş:
+Uygulamayı açtığınızda stoktaki ürünler ana ekranda listelenir. 
+İlk açılışta gerekli veriler yüklendiyse uygulama normal çalışır; sonrasında yaptığınız tüm değişiklikler uygulama içinde saklanır.
+
+Ana Ekran:
+- Ürün listesi: Tüm ürünler tablo halinde görünür.
+- Arama kutusu: Ürün adı veya kategori yazarak arama yapabilirsiniz; yazdıkça sonuçlar daralır.
+- Hızlı butonlar: Yeni Ürün Ekle, Ürünler Listesi, Yazdır, Ürün Sil, Alınan Ürünler, Bilgi.
+
+Hızlı İşlemler:
+1) Yeni Ürün Ekle
+- "Yeni Ürün Ekle"ye tıklayın. Ürün adı, kategori, birim ve miktar girin. Kaydet tuşuna basın; ürün listeye eklenir.
+
+2) Ürün Düzenleme
+- Tablo içinde düzenlemek istediğiniz ürüne çift tıklayın. Açılan pencerede bilgileri değiştirip kaydedin. Liste otomatik güncellenir.
+
+3) Ürün Silme
+- Silmek istediğiniz ürünü seçip "Ürün Sil" butonuna tıklayın.
+- İki seçenek çıkar: "Sadece listeden sil" veya "Başkası adına al" (isim girmenizi ister). İşlemi onaylayın.
+- Silme geri alınamayabilir; yanlışlıkla silmemeye dikkat edin.
+
+4) Alınan Ürünler
+- Başkası adına alınmış ürün kayıtlarını gösterir. Bu kayıtları silebilir, yazdırabilir veya rapor alabilirsiniz.
+
+5) Yazdırma
+- "Yazdır" ile ekrandaki tabloyu yazdırabilirsiniz. Çok geniş tablolar sayfaya sığdırılırken küçültülebilir; gerekiyorsa yazıcı ayarlarından yatay (landscape) seçin.
+
+Sık Sorulan Sorular
+- Uygulama açılmıyor/Veri görünmüyor: Uygulamayı kapatıp tekrar açın; devam ederse teknik ekibe bildirin.
+- Yanlışlıkla sildim: "Sadece sil" seçeneğinde genelde geri alınmaz. Yedek varsa teknik ekipten geri yükleme isteyin.
+- Yazdırma problemleri: Yazıcının bağlı/çalışır olduğundan emin olun; farklı yazıcı deneyin.
+
+Önemli Notlar
+- Silme işlemlerinde dikkatli olun; geri dönüş olmayabilir.
+- Büyük değişikliklerden önce yedekleme varsa öncesinde teknik ekipten destek alın.
+
+İletişim / Destek
+Herhangi bir sorun veya acil destek için lütfen teknik ekibe başvurun.

@@ -154,7 +154,7 @@
             this.MinimizeBox = false;
             this.Name = "FormUrunSil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Ürün Sil / Alındır";
+            this.Text = "Ürün Sil / Al";
             this.Load += new System.EventHandler(this.FormUrunSil_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

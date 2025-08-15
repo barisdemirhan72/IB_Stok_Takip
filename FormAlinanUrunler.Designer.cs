@@ -34,6 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKayitSil = new İB_Stok_Takip.RJButton();
+            this.btnYazdir = new İB_Stok_Takip.RJButton();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,12 +45,12 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 73);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 74);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1047, 412);
+            this.dataGridView1.Size = new System.Drawing.Size(1047, 411);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -108,17 +110,44 @@
             this.btnKayitSil.UseVisualStyleBackColor = false;
             this.btnKayitSil.Click += new System.EventHandler(this.btnKayitSil_Click);
             // 
+            // btnYazdir
+            // 
+            this.btnYazdir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYazdir.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.btnYazdir.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(129)))), ((int)(((byte)(32)))));
+            this.btnYazdir.BorderRadius = 20;
+            this.btnYazdir.BorderSize = 2;
+            this.btnYazdir.FlatAppearance.BorderSize = 0;
+            this.btnYazdir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYazdir.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnYazdir.ForeColor = System.Drawing.Color.Black;
+            this.btnYazdir.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.Image")));
+            this.btnYazdir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnYazdir.Location = new System.Drawing.Point(378, 500);
+            this.btnYazdir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnYazdir.Name = "btnYazdir";
+            this.btnYazdir.Size = new System.Drawing.Size(335, 65);
+            this.btnYazdir.TabIndex = 21;
+            this.btnYazdir.Text = "Yazdır";
+            this.btnYazdir.TextColor = System.Drawing.Color.Black;
+            this.btnYazdir.UseVisualStyleBackColor = false;
+            this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
+            // 
+            // printDocument1
+            // 
+            // 
             // FormAlinanUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1071, 588);
+            this.Controls.Add(this.btnYazdir);
             this.Controls.Add(this.btnKayitSil);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAlinanUrunler";
-            this.Text = "FormAlinanUrunler";
+            this.Text = "Alınan Ürünler";
             this.Load += new System.EventHandler(this.FormAlinanUrunler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -135,5 +164,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private RJButton btnKayitSil;
+        private RJButton btnYazdir;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

@@ -348,10 +348,16 @@ namespace İB_Stok_Takip
             }
         }
 
-        private void btnTemizle_Click(object sender, EventArgs e)
+       
+        private void btnTemizle_Click_1(object sender, EventArgs e)
         {
             arama.Text = "";
         }
 
+        private void btnBilgi_Click(object sender, EventArgs e)
+        {
+            FormBilgi formBilgi = new FormBilgi();
+            formBilgi.ShowDialog();
+        }
     }
 }

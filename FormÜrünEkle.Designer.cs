@@ -201,7 +201,9 @@
             this.Controls.Add(this.txtUrunAdi);
             this.Controls.Add(this.lblUrunAdi);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FormÜrünEkle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün Ekle";
             this.Load += new System.EventHandler(this.FormÜrünEkle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericMiktar)).EndInit();

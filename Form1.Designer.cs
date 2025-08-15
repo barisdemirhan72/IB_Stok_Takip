@@ -46,10 +46,13 @@
             this.btnYazdir = new İB_Stok_Takip.RJButton();
             this.btnRaporla = new İB_Stok_Takip.RJButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnTemizle = new System.Windows.Forms.Button();
+            this.btnBilgi = new System.Windows.Forms.PictureBox();
+            this.btnTemizle = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBilgi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTemizle)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -90,7 +93,7 @@
             this.lblDateTime.AutoSize = true;
             this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
             this.lblDateTime.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDateTime.Location = new System.Drawing.Point(1011, 706);
+            this.lblDateTime.Location = new System.Drawing.Point(1011, 712);
             this.lblDateTime.Name = "lblDateTime";
             this.lblDateTime.Size = new System.Drawing.Size(84, 28);
             this.lblDateTime.TabIndex = 2;
@@ -281,20 +284,31 @@
             this.label2.TabIndex = 22;
             this.label2.Text = "   Ara";
             // 
+            // btnBilgi
+            // 
+            this.btnBilgi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnBilgi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnBilgi.Image = ((System.Drawing.Image)(resources.GetObject("btnBilgi.Image")));
+            this.btnBilgi.Location = new System.Drawing.Point(1306, 692);
+            this.btnBilgi.Name = "btnBilgi";
+            this.btnBilgi.Size = new System.Drawing.Size(60, 53);
+            this.btnBilgi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBilgi.TabIndex = 27;
+            this.btnBilgi.TabStop = false;
+            this.btnBilgi.Click += new System.EventHandler(this.btnBilgi_Click);
+            // 
             // btnTemizle
             // 
-            this.btnTemizle.BackColor = System.Drawing.Color.Red;
-            this.btnTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTemizle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTemizle.Location = new System.Drawing.Point(1307, 114);
-            this.btnTemizle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTemizle.BackColor = System.Drawing.Color.Brown;
+            this.btnTemizle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.Image")));
+            this.btnTemizle.Location = new System.Drawing.Point(1306, 114);
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.Size = new System.Drawing.Size(60, 53);
-            this.btnTemizle.TabIndex = 25;
-            this.btnTemizle.Text = "SİL";
-            this.btnTemizle.UseVisualStyleBackColor = false;
-            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            this.btnTemizle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnTemizle.TabIndex = 28;
+            this.btnTemizle.TabStop = false;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click_1);
             // 
             // Form1
             // 
@@ -303,6 +317,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1379, 753);
             this.Controls.Add(this.btnTemizle);
+            this.Controls.Add(this.btnBilgi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRaporla);
             this.Controls.Add(this.btnYazdir);
@@ -328,6 +343,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBilgi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTemizle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,7 +368,8 @@
         private RJButton btnYazdir;
         private RJButton btnRaporla;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnTemizle;
+        private System.Windows.Forms.PictureBox btnBilgi;
+        private System.Windows.Forms.PictureBox btnTemizle;
     }
 }
 

@@ -65,6 +65,12 @@
     <Compile Include="FormAlinanUrunler.Designer.cs">
       <DependentUpon>FormAlinanUrunler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBilgi.Designer.cs">
+      <DependentUpon>FormBilgi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUrunSil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlinanUrunler.resx">
       <DependentUpon>FormAlinanUrunler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBilgi.resx">
+      <DependentUpon>FormBilgi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUrunSil.resx">
       <DependentUpon>FormUrunSil.cs</DependentUpon>

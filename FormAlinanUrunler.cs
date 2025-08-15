@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -210,5 +211,98 @@ namespace İB_Stok_Takip
                 }
             }
         }
+        PrintDocument printDocument = new PrintDocument();
+        PrintDialog printDialog = new PrintDialog();
+        int satirIndex = 0;
+        private void PrintDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            int baslangicX = 50;
+            int baslangicY = 50;
+            int hucreYukseklik = 30;
+            Font font = new Font("Arial", 9);
+            Brush brush = Brushes.Black;
+            StringFormat stringFormat = new StringFormat
+            {
+                Trimming = StringTrimming.EllipsisCharacter,
+                FormatFlags = StringFormatFlags.LineLimit
+            };
+
+            float[] sutunGenislikleri = new float[dataGridView1.Columns.Count];
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                SizeF baslikBoyut = e.Graphics.MeasureString(dataGridView1.Columns[i].HeaderText, font);
+                sutunGenislikleri[i] = Math.Max(baslikBoyut.Width, 60);
+
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Cells[i].Value != null)
+                    {
+                        SizeF veriBoyut = e.Graphics.MeasureString(row.Cells[i].Value.ToString(), font);
+                        sutunGenislikleri[i] = Math.Max(sutunGenislikleri[i], veriBoyut.Width);
+                    }
+                }
+            }
+
+            // Toplam genişlik
+            float toplamGenislik = sutunGenislikleri.Sum();
+            float yazdirilabilirGenislik = e.MarginBounds.Width;
+            float olcek = yazdirilabilirGenislik / toplamGenislik;
+
+            // Başlıklar
+            float currentX = baslangicX;
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
+            {
+                float genislik = sutunGenislikleri[i] * olcek;
+                RectangleF rect = new RectangleF(currentX, baslangicY, genislik, hucreYukseklik);
+                e.Graphics.DrawString(dataGridView1.Columns[i].HeaderText, font, brush, rect, stringFormat);
+                e.Graphics.DrawRectangle(Pens.Black, Rectangle.Round(rect));
+                currentX += genislik;
+            }
+            baslangicY += hucreYukseklik;
+
+            // Satırlar
+            while (satirIndex < dataGridView1.Rows.Count)
+            {
+                DataGridViewRow row = dataGridView1.Rows[satirIndex];
+                currentX = baslangicX;
+                for (int j = 0; j < row.Cells.Count; j++)
+                {
+                    float genislik = sutunGenislikleri[j] * olcek;
+                    RectangleF rect = new RectangleF(currentX, baslangicY, genislik, hucreYukseklik);
+                    if (row.Cells[j].Value != null)
+                    {
+                        e.Graphics.DrawString(row.Cells[j].Value.ToString(), font, brush, rect, stringFormat);
+                    }
+                    e.Graphics.DrawRectangle(Pens.Black, Rectangle.Round(rect));
+                    currentX += genislik;
+                }
+                satirIndex++;
+                baslangicY += hucreYukseklik;
+
+                if (baslangicY > e.MarginBounds.Bottom)
+                {
+                    e.HasMorePages = true;
+                    return;
+                }
+            }
+
+            e.HasMorePages = false;
+        }
+
+    
+        private void btnYazdir_Click(object sender, EventArgs e)
+        {
+            printDocument.PrintPage += PrintDocument1_PrintPage;
+            printDialog.Document = printDocument;
+
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                satirIndex = 0; // Her yazdırmada baştan başlasın
+                printDocument.Print();
+            }
+        }
+
+       
+        
     }
 }
