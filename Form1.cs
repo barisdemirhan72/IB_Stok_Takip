@@ -44,7 +44,7 @@ namespace İB_Stok_Takip
             }
         }
 
-        private void VerileriGetir(string aramaMetni = "")
+        public void VerileriGetir(string aramaMetni = "")
         {
             string baglantiDizesi = "Data Source=stok.db;Version=3;";
             try
@@ -57,7 +57,7 @@ namespace İB_Stok_Takip
 
                     if (!string.IsNullOrEmpty(aramaMetni))
                     {
-                        sql += " WHERE ÜRÜN_ADI LIKE @arama OR KATEGORİ LIKE @arama"; // Düzeltme: `ÜRÜN ADI` → `ÜRÜN_ADI`
+                        sql += " WHERE ÜRÜN_ADI LIKE @arama OR KATEGORİ LIKE @arama"; 
                     }
 
                     using (SQLiteCommand komut = new SQLiteCommand(sql, baglanti))
@@ -89,7 +89,7 @@ namespace İB_Stok_Takip
 
             // Sütunların genişlik ayarı
             dataGridView1.Columns["ID"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridView1.Columns["ÜRÜN_ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // Düzeltme: `ÜRÜN ADI` → `ÜRÜN_ADI`
+            dataGridView1.Columns["ÜRÜN_ADI"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; 
             dataGridView1.Columns["BİRİM"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns["KATEGORİ"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridView1.Columns["MİKTAR"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
@@ -144,7 +144,7 @@ namespace İB_Stok_Takip
             int baslangicX = 50;
             int baslangicY = 50;
             int hucreYukseklik = 30;
-            Font font = new Font("Arial", 11);
+            Font font = new Font("Arial", 9); // Daha küçük font ile daha çok veri sığar
             Brush brush = Brushes.Black;
             StringFormat stringFormat = new StringFormat
             {
@@ -156,7 +156,7 @@ namespace İB_Stok_Takip
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
                 SizeF baslikBoyut = e.Graphics.MeasureString(dataGridView1.Columns[i].HeaderText, font);
-                sutunGenislikleri[i] = Math.Max(baslikBoyut.Width, 100);
+                sutunGenislikleri[i] = Math.Max(baslikBoyut.Width, 60);
 
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
@@ -168,34 +168,49 @@ namespace İB_Stok_Takip
                 }
             }
 
+            // 🔹 Toplam genişliği hesapla
+            float toplamGenislik = 0;
+            foreach (float genislik in sutunGenislikleri)
+                toplamGenislik += genislik;
+
+            // 🔹 Yazdırma alanının genişliği
+            float yazdirilabilirGenislik = e.MarginBounds.Width;
+
+            // 🔹 Ölçek katsayısı (1'den küçükse daraltma yapılır)
+            float olcek = yazdirilabilirGenislik / toplamGenislik;
+
+            // 🔹 Sütun başlıklarını çiz
             float currentX = baslangicX;
             for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
-                RectangleF rect = new RectangleF(currentX, baslangicY, sutunGenislikleri[i], hucreYukseklik);
+                float genislik = sutunGenislikleri[i] * olcek;
+                RectangleF rect = new RectangleF(currentX, baslangicY, genislik, hucreYukseklik);
                 e.Graphics.DrawString(dataGridView1.Columns[i].HeaderText, font, brush, rect, stringFormat);
                 e.Graphics.DrawRectangle(Pens.Black, Rectangle.Round(rect));
-                currentX += sutunGenislikleri[i];
+                currentX += genislik;
             }
             baslangicY += hucreYukseklik;
 
+            // 🔹 Satırları yazdır
             while (satirIndex < dataGridView1.Rows.Count)
             {
                 DataGridViewRow row = dataGridView1.Rows[satirIndex];
                 currentX = baslangicX;
                 for (int j = 0; j < row.Cells.Count; j++)
                 {
-                    object value = row.Cells[j].Value;
-                    RectangleF rect = new RectangleF(currentX, baslangicY, sutunGenislikleri[j], hucreYukseklik);
-                    if (value != null)
+                    float genislik = sutunGenislikleri[j] * olcek;
+                    RectangleF rect = new RectangleF(currentX, baslangicY, genislik, hucreYukseklik);
+                    if (row.Cells[j].Value != null)
                     {
-                        e.Graphics.DrawString(value.ToString(), font, brush, rect, stringFormat);
+                        e.Graphics.DrawString(row.Cells[j].Value.ToString(), font, brush, rect, stringFormat);
                     }
                     e.Graphics.DrawRectangle(Pens.Black, Rectangle.Round(rect));
-                    currentX += sutunGenislikleri[j];
+                    currentX += genislik;
                 }
                 satirIndex++;
                 baslangicY += hucreYukseklik;
 
+                // Sayfa dolarsa
                 if (baslangicY > e.MarginBounds.Bottom)
                 {
                     e.HasMorePages = true;
@@ -245,7 +260,55 @@ namespace İB_Stok_Takip
                 dataGridView1.Rows[e.RowIndex].Selected = true;
             }
         }
+        private void ReindexIDs()
+        {
+            string baglantiDizesi = "Data Source=stok.db;Version=3;";
+            using (SQLiteConnection baglanti = new SQLiteConnection(baglantiDizesi))
+            {
+                baglanti.Open();
+                // Mevcut verileri al
+                string sql = "SELECT ÜRÜN_ADI, BİRİM, KATEGORİ, MİKTAR FROM urun_tablo ORDER BY ID";
+                using (SQLiteCommand komut = new SQLiteCommand(sql, baglanti))
+                {
+                    using (SQLiteDataAdapter adaptor = new SQLiteDataAdapter(komut))
+                    {
+                        DataTable dt = new DataTable();
+                        adaptor.Fill(dt);
 
+                        // Geçici tablo oluştur
+                        string createTempTable = "CREATE TABLE temp_urun_tablo (ID INTEGER PRIMARY KEY AUTOINCREMENT, ÜRÜN_ADI TEXT, BİRİM TEXT, KATEGORİ TEXT, MİKTAR INTEGER)";
+                        using (SQLiteCommand cmd = new SQLiteCommand(createTempTable, baglanti))
+                        {
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        // Verileri yeni ID'lerle geçici tabloya ekle
+                        foreach (DataRow row in dt.Rows)
+                        {
+                            string insertSql = "INSERT INTO temp_urun_tablo (ÜRÜN_ADI, BİRİM, KATEGORİ, MİKTAR) VALUES (@urunAdi, @birim, @kategori, @miktar)";
+                            using (SQLiteCommand insertCmd = new SQLiteCommand(insertSql, baglanti))
+                            {
+                                insertCmd.Parameters.AddWithValue("@urunAdi", row["ÜRÜN_ADI"]);
+                                insertCmd.Parameters.AddWithValue("@birim", row["BİRİM"]);
+                                insertCmd.Parameters.AddWithValue("@kategori", row["KATEGORİ"]);
+                                insertCmd.Parameters.AddWithValue("@miktar", row["MİKTAR"]);
+                                insertCmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        // Eski tabloyu sil ve geçici tabloyu yeniden adlandır
+                        using (SQLiteCommand cmd = new SQLiteCommand("DROP TABLE urun_tablo", baglanti))
+                        {
+                            cmd.ExecuteNonQuery();
+                        }
+                        using (SQLiteCommand cmd = new SQLiteCommand("ALTER TABLE temp_urun_tablo RENAME TO urun_tablo", baglanti))
+                        {
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                }
+            }
+        }
         private void btnUrunSil_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count == 0)
@@ -255,7 +318,7 @@ namespace İB_Stok_Takip
             }
 
             int secilenID = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
-            string secilenUrunAdi = dataGridView1.SelectedRows[0].Cells["ÜRÜN_ADI"].Value.ToString(); // Düzeltme: `ÜRÜN ADI` → `ÜRÜN_ADI`
+            string secilenUrunAdi = dataGridView1.SelectedRows[0].Cells["ÜRÜN_ADI"].Value.ToString(); 
             string secilenBirim = dataGridView1.SelectedRows[0].Cells["BİRİM"].Value.ToString();
             string secilenKategori = dataGridView1.SelectedRows[0].Cells["KATEGORİ"].Value.ToString();
             int secilenMiktar = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["MİKTAR"].Value);
@@ -265,6 +328,7 @@ namespace İB_Stok_Takip
 
             if (result == DialogResult.OK)
             {
+                ReindexIDs();
                 VerileriGetir();
                 arama.Text = "";
             }
@@ -288,5 +352,6 @@ namespace İB_Stok_Takip
         {
             arama.Text = "";
         }
+
     }
 }

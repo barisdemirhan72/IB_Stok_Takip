@@ -21,12 +21,9 @@ namespace İB_Stok_Takip
             Kategori = kategori;
             Miktar = miktar;
 
-            // RJButton ve RadioButton event bağlama
             btnOnayla.Click += btnOnayla_Click;
             radioBaskaAdinaAldir.CheckedChanged += radioBaskaAdinaAldir_CheckedChanged;
 
-
-            // Varsayılan ayarlar
             txtAdSoyad.Enabled = false;
             radioSadeceSil.Checked = true;
         }
@@ -35,7 +32,6 @@ namespace İB_Stok_Takip
         {
             if (radioSadeceSil.Checked)
             {
-                // Ürünü urun_tablo'dan sil
                 SilUrun();
             }
             else if (radioBaskaAdinaAldir.Checked)
@@ -94,18 +90,17 @@ namespace İB_Stok_Takip
 
                     // 2) urun_alinan tablosuna kayıt ekle
                     string insertSQL = @"INSERT INTO urun_alinan 
-                        (ID, `ÜRÜN ADI`, `BİRİM`, `KATEGORİ`, `MİKTAR`, `AD SOYAD`, `ALINAN TARİH`) 
-                        VALUES (@id, @urunAdi, @birim, @kategori, @miktar, @adSoyad, @alınanTarih)";
+                        (ÜRÜN_ADI, BİRİM, KATEGORİ, MİKTAR, AD_SOYAD, ALINAN_TARIH) 
+                        VALUES (@urunAdi, @birim, @kategori, @miktar, @adSoyad, @alinanTarih)";
 
                     using (SQLiteCommand komutInsert = new SQLiteCommand(insertSQL, baglanti))
                     {
-                        komutInsert.Parameters.AddWithValue("@id", UrunID);
                         komutInsert.Parameters.AddWithValue("@urunAdi", UrunAdi);
                         komutInsert.Parameters.AddWithValue("@birim", Birim);
                         komutInsert.Parameters.AddWithValue("@kategori", Kategori);
                         komutInsert.Parameters.AddWithValue("@miktar", Miktar);
                         komutInsert.Parameters.AddWithValue("@adSoyad", adSoyad);
-                        komutInsert.Parameters.AddWithValue("@alınanTarih", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                        komutInsert.Parameters.AddWithValue("@alinanTarih", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
 
                         komutInsert.ExecuteNonQuery();
                     }
@@ -126,7 +121,6 @@ namespace İB_Stok_Takip
             txtAdSoyad.Visible = aktif;
             lblAdSoyad.Visible = aktif;
             txtAdSoyad.Enabled = aktif;
-
         }
 
         private void FormUrunSil_Load(object sender, EventArgs e)
@@ -134,8 +128,6 @@ namespace İB_Stok_Takip
             txtAdSoyad.Visible = false;
             lblAdSoyad.Visible = false;
             radioSadeceSil.Checked = true;
-
-            
         }
     }
 }

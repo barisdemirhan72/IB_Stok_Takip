@@ -33,6 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnKayitSil = new İB_Stok_Takip.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -42,12 +43,12 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 73);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1071, 479);
+            this.dataGridView1.Size = new System.Drawing.Size(1047, 412);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -84,11 +85,35 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnKayitSil
+            // 
+            this.btnKayitSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(174)))), ((int)(((byte)(23)))));
+            this.btnKayitSil.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(174)))), ((int)(((byte)(23)))));
+            this.btnKayitSil.BorderColor = System.Drawing.Color.Black;
+            this.btnKayitSil.BorderRadius = 20;
+            this.btnKayitSil.BorderSize = 2;
+            this.btnKayitSil.FlatAppearance.BorderSize = 0;
+            this.btnKayitSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKayitSil.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKayitSil.ForeColor = System.Drawing.Color.White;
+            this.btnKayitSil.Image = ((System.Drawing.Image)(resources.GetObject("btnKayitSil.Image")));
+            this.btnKayitSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKayitSil.Location = new System.Drawing.Point(13, 500);
+            this.btnKayitSil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKayitSil.Name = "btnKayitSil";
+            this.btnKayitSil.Size = new System.Drawing.Size(335, 65);
+            this.btnKayitSil.TabIndex = 18;
+            this.btnKayitSil.Text = "   Kayıt Sil";
+            this.btnKayitSil.TextColor = System.Drawing.Color.White;
+            this.btnKayitSil.UseVisualStyleBackColor = false;
+            this.btnKayitSil.Click += new System.EventHandler(this.btnKayitSil_Click);
+            // 
             // FormAlinanUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 561);
+            this.ClientSize = new System.Drawing.Size(1071, 588);
+            this.Controls.Add(this.btnKayitSil);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -109,5 +134,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private RJButton btnKayitSil;
     }
 }

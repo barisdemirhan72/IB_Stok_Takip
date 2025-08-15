@@ -60,7 +60,7 @@
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1363, 70);
+            this.panel1.Size = new System.Drawing.Size(1385, 70);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -89,10 +89,10 @@
             // 
             this.lblDateTime.AutoSize = true;
             this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
-            this.lblDateTime.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblDateTime.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblDateTime.Location = new System.Drawing.Point(1011, 706);
             this.lblDateTime.Name = "lblDateTime";
-            this.lblDateTime.Size = new System.Drawing.Size(101, 34);
+            this.lblDateTime.Size = new System.Drawing.Size(84, 28);
             this.lblDateTime.TabIndex = 2;
             this.lblDateTime.Text = "label2";
             // 
@@ -122,7 +122,7 @@
             this.arama.Location = new System.Drawing.Point(1007, 114);
             this.arama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.arama.Name = "arama";
-            this.arama.Size = new System.Drawing.Size(269, 53);
+            this.arama.Size = new System.Drawing.Size(294, 53);
             this.arama.TabIndex = 11;
             this.arama.TextChanged += new System.EventHandler(this.arama_TextChanged);
             // 
@@ -150,7 +150,7 @@
             this.btnUrunEkle.Location = new System.Drawing.Point(1007, 193);
             this.btnUrunEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnUrunEkle.Name = "btnUrunEkle";
-            this.btnUrunEkle.Size = new System.Drawing.Size(335, 65);
+            this.btnUrunEkle.Size = new System.Drawing.Size(360, 65);
             this.btnUrunEkle.TabIndex = 16;
             this.btnUrunEkle.Text = "     Yeni Ürün Ekle";
             this.btnUrunEkle.TextColor = System.Drawing.Color.White;
@@ -172,7 +172,7 @@
             this.btnUrunSil.Location = new System.Drawing.Point(1007, 304);
             this.btnUrunSil.Margin = new System.Windows.Forms.Padding(4);
             this.btnUrunSil.Name = "btnUrunSil";
-            this.btnUrunSil.Size = new System.Drawing.Size(335, 65);
+            this.btnUrunSil.Size = new System.Drawing.Size(359, 65);
             this.btnUrunSil.TabIndex = 17;
             this.btnUrunSil.Text = "   Ürün Sil/Al";
             this.btnUrunSil.TextColor = System.Drawing.Color.White;
@@ -194,7 +194,7 @@
             this.btnUrunListele.Location = new System.Drawing.Point(1007, 412);
             this.btnUrunListele.Margin = new System.Windows.Forms.Padding(4);
             this.btnUrunListele.Name = "btnUrunListele";
-            this.btnUrunListele.Size = new System.Drawing.Size(335, 65);
+            this.btnUrunListele.Size = new System.Drawing.Size(360, 65);
             this.btnUrunListele.TabIndex = 18;
             this.btnUrunListele.Text = "   Ürün Listele";
             this.btnUrunListele.TextColor = System.Drawing.Color.White;
@@ -213,10 +213,10 @@
             this.btnAlinanUrunler.ForeColor = System.Drawing.Color.White;
             this.btnAlinanUrunler.Image = ((System.Drawing.Image)(resources.GetObject("btnAlinanUrunler.Image")));
             this.btnAlinanUrunler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlinanUrunler.Location = new System.Drawing.Point(1007, 513);
+            this.btnAlinanUrunler.Location = new System.Drawing.Point(1007, 519);
             this.btnAlinanUrunler.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlinanUrunler.Name = "btnAlinanUrunler";
-            this.btnAlinanUrunler.Size = new System.Drawing.Size(335, 65);
+            this.btnAlinanUrunler.Size = new System.Drawing.Size(359, 65);
             this.btnAlinanUrunler.TabIndex = 19;
             this.btnAlinanUrunler.Text = "  Alınan Ürünler";
             this.btnAlinanUrunler.TextColor = System.Drawing.Color.White;
@@ -235,10 +235,10 @@
             this.btnYazdir.ForeColor = System.Drawing.Color.Black;
             this.btnYazdir.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.Image")));
             this.btnYazdir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYazdir.Location = new System.Drawing.Point(1007, 607);
+            this.btnYazdir.Location = new System.Drawing.Point(1007, 620);
             this.btnYazdir.Margin = new System.Windows.Forms.Padding(4);
             this.btnYazdir.Name = "btnYazdir";
-            this.btnYazdir.Size = new System.Drawing.Size(159, 65);
+            this.btnYazdir.Size = new System.Drawing.Size(174, 65);
             this.btnYazdir.TabIndex = 20;
             this.btnYazdir.Text = "Yazdır";
             this.btnYazdir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -258,10 +258,10 @@
             this.btnRaporla.ForeColor = System.Drawing.Color.Black;
             this.btnRaporla.Image = ((System.Drawing.Image)(resources.GetObject("btnRaporla.Image")));
             this.btnRaporla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRaporla.Location = new System.Drawing.Point(1173, 607);
+            this.btnRaporla.Location = new System.Drawing.Point(1189, 620);
             this.btnRaporla.Margin = new System.Windows.Forms.Padding(4);
             this.btnRaporla.Name = "btnRaporla";
-            this.btnRaporla.Size = new System.Drawing.Size(168, 65);
+            this.btnRaporla.Size = new System.Drawing.Size(177, 65);
             this.btnRaporla.TabIndex = 21;
             this.btnRaporla.Text = "Raporla";
             this.btnRaporla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -275,7 +275,7 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(1012, 84);
+            this.label2.Location = new System.Drawing.Point(1011, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 29);
             this.label2.TabIndex = 22;
@@ -287,7 +287,7 @@
             this.btnTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTemizle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTemizle.Location = new System.Drawing.Point(1282, 114);
+            this.btnTemizle.Location = new System.Drawing.Point(1307, 114);
             this.btnTemizle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTemizle.Name = "btnTemizle";
             this.btnTemizle.Size = new System.Drawing.Size(60, 53);
@@ -301,7 +301,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1365, 753);
+            this.ClientSize = new System.Drawing.Size(1379, 753);
             this.Controls.Add(this.btnTemizle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnRaporla);
