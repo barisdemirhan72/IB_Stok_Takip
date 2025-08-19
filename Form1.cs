@@ -359,5 +359,11 @@ namespace İB_Stok_Takip
             FormBilgi formBilgi = new FormBilgi();
             formBilgi.ShowDialog();
         }
+
+        private void btnRaporla_Click(object sender, EventArgs e)
+        {
+            FormRaporla formRaporla = new FormRaporla(); 
+            formRaporla.ShowDialog();
+        }
     }
 }

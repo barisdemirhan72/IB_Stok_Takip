@@ -61,9 +61,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1385, 70);
+            this.panel1.Size = new System.Drawing.Size(1039, 57);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -71,9 +71,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(111, 20);
+            this.label1.Location = new System.Drawing.Point(83, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(657, 34);
+            this.label1.Size = new System.Drawing.Size(515, 27);
             this.label1.TabIndex = 1;
             this.label1.Text = "İskenderun Belediyesi Stok Takip Uygulaması";
             // 
@@ -81,9 +82,9 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 70);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -93,9 +94,10 @@
             this.lblDateTime.AutoSize = true;
             this.lblDateTime.BackColor = System.Drawing.Color.Transparent;
             this.lblDateTime.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblDateTime.Location = new System.Drawing.Point(1011, 712);
+            this.lblDateTime.Location = new System.Drawing.Point(758, 578);
+            this.lblDateTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDateTime.Name = "lblDateTime";
-            this.lblDateTime.Size = new System.Drawing.Size(84, 28);
+            this.lblDateTime.Size = new System.Drawing.Size(68, 23);
             this.lblDateTime.TabIndex = 2;
             this.lblDateTime.Text = "label2";
             // 
@@ -107,12 +109,12 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 114);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 93);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(980, 626);
+            this.dataGridView1.Size = new System.Drawing.Size(735, 509);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.AllowUserToDeleteRowsChanged += new System.EventHandler(this.Form1_Load);
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -122,10 +124,10 @@
             // 
             this.arama.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.arama.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.arama.Location = new System.Drawing.Point(1007, 114);
-            this.arama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.arama.Location = new System.Drawing.Point(755, 93);
+            this.arama.Margin = new System.Windows.Forms.Padding(2);
             this.arama.Name = "arama";
-            this.arama.Size = new System.Drawing.Size(294, 53);
+            this.arama.Size = new System.Drawing.Size(222, 44);
             this.arama.TabIndex = 11;
             this.arama.TextChanged += new System.EventHandler(this.arama_TextChanged);
             // 
@@ -150,10 +152,9 @@
             this.btnUrunEkle.ForeColor = System.Drawing.Color.White;
             this.btnUrunEkle.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunEkle.Image")));
             this.btnUrunEkle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrunEkle.Location = new System.Drawing.Point(1007, 193);
-            this.btnUrunEkle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUrunEkle.Location = new System.Drawing.Point(755, 157);
             this.btnUrunEkle.Name = "btnUrunEkle";
-            this.btnUrunEkle.Size = new System.Drawing.Size(360, 65);
+            this.btnUrunEkle.Size = new System.Drawing.Size(270, 53);
             this.btnUrunEkle.TabIndex = 16;
             this.btnUrunEkle.Text = "     Yeni Ürün Ekle";
             this.btnUrunEkle.TextColor = System.Drawing.Color.White;
@@ -172,10 +173,9 @@
             this.btnUrunSil.ForeColor = System.Drawing.Color.White;
             this.btnUrunSil.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunSil.Image")));
             this.btnUrunSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrunSil.Location = new System.Drawing.Point(1007, 304);
-            this.btnUrunSil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUrunSil.Location = new System.Drawing.Point(755, 247);
             this.btnUrunSil.Name = "btnUrunSil";
-            this.btnUrunSil.Size = new System.Drawing.Size(359, 65);
+            this.btnUrunSil.Size = new System.Drawing.Size(269, 53);
             this.btnUrunSil.TabIndex = 17;
             this.btnUrunSil.Text = "   Ürün Sil/Al";
             this.btnUrunSil.TextColor = System.Drawing.Color.White;
@@ -194,10 +194,9 @@
             this.btnUrunListele.ForeColor = System.Drawing.Color.White;
             this.btnUrunListele.Image = ((System.Drawing.Image)(resources.GetObject("btnUrunListele.Image")));
             this.btnUrunListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUrunListele.Location = new System.Drawing.Point(1007, 412);
-            this.btnUrunListele.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUrunListele.Location = new System.Drawing.Point(755, 335);
             this.btnUrunListele.Name = "btnUrunListele";
-            this.btnUrunListele.Size = new System.Drawing.Size(360, 65);
+            this.btnUrunListele.Size = new System.Drawing.Size(270, 53);
             this.btnUrunListele.TabIndex = 18;
             this.btnUrunListele.Text = "   Ürün Listele";
             this.btnUrunListele.TextColor = System.Drawing.Color.White;
@@ -216,10 +215,9 @@
             this.btnAlinanUrunler.ForeColor = System.Drawing.Color.White;
             this.btnAlinanUrunler.Image = ((System.Drawing.Image)(resources.GetObject("btnAlinanUrunler.Image")));
             this.btnAlinanUrunler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlinanUrunler.Location = new System.Drawing.Point(1007, 519);
-            this.btnAlinanUrunler.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAlinanUrunler.Location = new System.Drawing.Point(755, 422);
             this.btnAlinanUrunler.Name = "btnAlinanUrunler";
-            this.btnAlinanUrunler.Size = new System.Drawing.Size(359, 65);
+            this.btnAlinanUrunler.Size = new System.Drawing.Size(269, 53);
             this.btnAlinanUrunler.TabIndex = 19;
             this.btnAlinanUrunler.Text = "  Alınan Ürünler";
             this.btnAlinanUrunler.TextColor = System.Drawing.Color.White;
@@ -238,10 +236,9 @@
             this.btnYazdir.ForeColor = System.Drawing.Color.Black;
             this.btnYazdir.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.Image")));
             this.btnYazdir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYazdir.Location = new System.Drawing.Point(1007, 620);
-            this.btnYazdir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnYazdir.Location = new System.Drawing.Point(755, 504);
             this.btnYazdir.Name = "btnYazdir";
-            this.btnYazdir.Size = new System.Drawing.Size(174, 65);
+            this.btnYazdir.Size = new System.Drawing.Size(130, 53);
             this.btnYazdir.TabIndex = 20;
             this.btnYazdir.Text = "Yazdır";
             this.btnYazdir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -261,15 +258,15 @@
             this.btnRaporla.ForeColor = System.Drawing.Color.Black;
             this.btnRaporla.Image = ((System.Drawing.Image)(resources.GetObject("btnRaporla.Image")));
             this.btnRaporla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRaporla.Location = new System.Drawing.Point(1189, 620);
-            this.btnRaporla.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRaporla.Location = new System.Drawing.Point(892, 504);
             this.btnRaporla.Name = "btnRaporla";
-            this.btnRaporla.Size = new System.Drawing.Size(177, 65);
+            this.btnRaporla.Size = new System.Drawing.Size(133, 53);
             this.btnRaporla.TabIndex = 21;
             this.btnRaporla.Text = "Raporla";
             this.btnRaporla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRaporla.TextColor = System.Drawing.Color.Black;
             this.btnRaporla.UseVisualStyleBackColor = false;
+            this.btnRaporla.Click += new System.EventHandler(this.btnRaporla_Click);
             // 
             // label2
             // 
@@ -278,9 +275,10 @@
             this.label2.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(1011, 83);
+            this.label2.Location = new System.Drawing.Point(758, 67);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 29);
+            this.label2.Size = new System.Drawing.Size(60, 23);
             this.label2.TabIndex = 22;
             this.label2.Text = "   Ara";
             // 
@@ -289,9 +287,10 @@
             this.btnBilgi.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBilgi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnBilgi.Image = ((System.Drawing.Image)(resources.GetObject("btnBilgi.Image")));
-            this.btnBilgi.Location = new System.Drawing.Point(1306, 692);
+            this.btnBilgi.Location = new System.Drawing.Point(980, 562);
+            this.btnBilgi.Margin = new System.Windows.Forms.Padding(2);
             this.btnBilgi.Name = "btnBilgi";
-            this.btnBilgi.Size = new System.Drawing.Size(60, 53);
+            this.btnBilgi.Size = new System.Drawing.Size(46, 43);
             this.btnBilgi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnBilgi.TabIndex = 27;
             this.btnBilgi.TabStop = false;
@@ -299,12 +298,13 @@
             // 
             // btnTemizle
             // 
-            this.btnTemizle.BackColor = System.Drawing.Color.Brown;
+            this.btnTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(174)))), ((int)(((byte)(23)))));
             this.btnTemizle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.btnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("btnTemizle.Image")));
-            this.btnTemizle.Location = new System.Drawing.Point(1306, 114);
+            this.btnTemizle.Location = new System.Drawing.Point(980, 93);
+            this.btnTemizle.Margin = new System.Windows.Forms.Padding(2);
             this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(60, 53);
+            this.btnTemizle.Size = new System.Drawing.Size(46, 43);
             this.btnTemizle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnTemizle.TabIndex = 28;
             this.btnTemizle.TabStop = false;
@@ -312,10 +312,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1379, 753);
+            this.ClientSize = new System.Drawing.Size(1034, 612);
             this.Controls.Add(this.btnTemizle);
             this.Controls.Add(this.btnBilgi);
             this.Controls.Add(this.label2);
@@ -333,7 +333,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
